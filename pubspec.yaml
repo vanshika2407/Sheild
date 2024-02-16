@@ -36,6 +36,7 @@ dependencies:
     sdk: flutter
   flutter_riverpod: ^2.3.7
   geolocator: ^10.1.0
+  google_maps_flutter: ^2.5.3
   http: ^0.13.6
   intl: null
   permission_handler: ^11.1.0

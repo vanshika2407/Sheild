@@ -1,25 +1,14 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 
 class KPIWidget extends StatelessWidget {
-  const KPIWidget({
-    Key? key,
-    required this.name,
-    required this.child,
-    required this.onTap,
-  }) : super(key: key);
+  KPIWidget({required this.name, required this.child});
 
   final String name;
   final Widget child;
-  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      child: Container(
+    return Container(
         width: 0.23 * MediaQuery.of(context).size.width,
         child: Column(
           children: <Widget>[
@@ -28,10 +17,7 @@ class KPIWidget extends StatelessWidget {
               width: 50,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  colors: const [
-                    Colors.white30,
-                    Colors.white38,
-                  ],
+                  colors: [Colors.white, Color(0xffeef9ff)],
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                 ),
@@ -50,13 +36,11 @@ class KPIWidget extends StatelessWidget {
               child: Text(
                 this.name,
                 style: TextStyle(
-                  color: Color.fromARGB(255, 147, 202, 231),
+                  color: Color(0xff699ab5),
                 ),
               ),
-            ),
+            )
           ],
-        ),
-      ),
-    );
+        ));
   }
 }
