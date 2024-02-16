@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../screens/event.dart';
+import '../../../screens/event.dart';
+
 
 class PictureButton extends StatelessWidget {
   PictureButton({
@@ -33,10 +34,10 @@ class PictureButton extends StatelessWidget {
                     : BorderRadius.circular(20),
                 image: DecorationImage(image: this.pic, fit: BoxFit.cover)),
             child: GestureDetector(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Event()));
-                },
+                // onTap: () {
+                //   Navigator.push(context,
+                //       MaterialPageRoute(builder: (context) => Event()));
+                // },
                 child: Container(
                   width: this.width,
                   height: this.height,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:she_secure/features/home/dashboard.dart';
+import 'package:she_secure/features/navigation/navigation.dart';
 
 import '../../colors.dart';
 import '../profile/screens/settings_screen.dart';
@@ -15,7 +16,7 @@ class HomePage extends StatefulWidget {
 class _DoctorMainPageState extends State<HomePage> {
   List pages = [
     const Dashboard(),
-    const SettingsPage(),
+    Navigationwidget(),
     const SettingsPage(),
   ];
 
@@ -54,7 +55,7 @@ class _DoctorMainPageState extends State<HomePage> {
               ),
               GButton(
                   icon: Icons.people_alt_sharp,
-                  text: 'History',
+                  text: 'Map',
                   textColor: Colors.black,
                   iconColor: whiteColor,
                   textStyle: textStyle),
