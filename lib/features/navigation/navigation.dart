@@ -1,6 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:she_secure/features/navigation/widgets/draggablesection.dart';
+
+import 'widgets/topsection.dart';
 
 class Navigationwidget extends StatefulWidget {
   const Navigationwidget({super.key});
@@ -22,18 +25,22 @@ class _NavigationwidgetState extends State<Navigationwidget> {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
-        body: Container(
-          decoration: BoxDecoration(
-            border: Border.all(),
-          ),
-          child: GoogleMap(
-            onMapCreated: _onMapCreated,
-            initialCameraPosition: CameraPosition(
-              target: LatLng(19.20626, 72.873666),
+        body: Stack(
+          children: [
+            GoogleMap(
+              onMapCreated: _onMapCreated,
+              initialCameraPosition: CameraPosition(
+                target: LatLng(19.20626, 72.873666),
+              ),
             ),
-          ),
+            TopSection(),
+            GestureDetector(
+              child: CDraggable(),
+            ),
+          ],
         ),
       ),
     );
