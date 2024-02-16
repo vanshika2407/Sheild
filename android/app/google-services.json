@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "462881727488",
+    "project_id": "she-740e1",
+    "storage_bucket": "she-740e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462881727488:android:d5ad0a0ca7ba176572a4e5",
+        "android_client_info": {
+          "package_name": "com.example.here_final"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhzqzc8bFzGKKiU8s8xB5dERO-OCQV-HI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

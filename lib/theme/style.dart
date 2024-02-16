@@ -8,5 +8,8 @@ ThemeData appTheme() {
     scaffoldBackgroundColor: Colors.black,
     canvasColor: Colors.black,
     colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.blue),
+    // textTheme: TextTheme(
+      
+    // ),
   );
 }
