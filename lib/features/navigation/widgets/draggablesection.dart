@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:she_secure/features/navigation/widgets/searchbar.dart';
 
 class CDraggable extends ConsumerStatefulWidget {
   const CDraggable({super.key});
@@ -10,7 +11,6 @@ class CDraggable extends ConsumerStatefulWidget {
 
 class _CDraggableState extends ConsumerState<CDraggable> {
   final sheet_controller = DraggableScrollableController();
-
 
   @override
   Widget build(BuildContext context) {
@@ -39,8 +39,9 @@ class _CDraggableState extends ConsumerState<CDraggable> {
                     // color: Colors.white.withOpacity(0.5),
                     color: Colors.blueGrey.withOpacity(0.8),
                     borderRadius: const BorderRadius.only(
-                        topLeft: Radius.circular(30),
-                        topRight: Radius.circular(30)),
+                      topLeft: Radius.circular(30),
+                      topRight: Radius.circular(30),
+                    ),
                     boxShadow: const <BoxShadow>[
                       BoxShadow(
                         blurRadius: 30,
@@ -52,7 +53,12 @@ class _CDraggableState extends ConsumerState<CDraggable> {
                   controller: ScrollController(),
                   physics: NeverScrollableScrollPhysics(),
                   child: Column(
-                    children: [SearchBar()],
+                    children: [
+                      SearchBarWidget(
+                        baseTop: 20,
+                        height: 20,
+                      ),
+                    ],
                   ),
                 ),
               ),

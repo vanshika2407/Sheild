@@ -55,7 +55,7 @@ class _DoctorMainPageState extends State<HomePage> {
               ),
               GButton(
                   icon: Icons.people_alt_sharp,
-                  text: 'History',
+                  text: 'Map',
                   textColor: Colors.black,
                   iconColor: whiteColor,
                   textStyle: textStyle),
