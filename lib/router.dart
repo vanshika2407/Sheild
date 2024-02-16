@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 import 'package:flutter/material.dart';
+import 'package:she_secure/features/auth/user_information_screen.dart';
 import 'package:she_secure/features/home/home_page.dart';
 
 import 'common/widgets/error.dart';
@@ -15,6 +16,11 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     case HomePage.routeName:
       return MaterialPageRoute(
         builder: (context) => const HomePage(),
+      );
+
+    case UserInformationScreen.routeName:
+      return MaterialPageRoute(
+        builder: (context) => const UserInformationScreen(),
       );
 
     default:

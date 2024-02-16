@@ -50,18 +50,18 @@ class AuthController {
     required BuildContext context,
     required String name,
     required String phoneNumber,
-    required File? profilePic,
-    String? expertise,
-    String? address,
+    required String safeword,
+    required List<String> emergencyNumbers,
+    required String city,
   }) {
     return authRepository.saveUserDataToFirebase(
+      ref: ref,
       context: context,
       name: name,
       phoneNumber: phoneNumber,
-      expertise: expertise,
-      address: address,
-      profilePic: profilePic,
-      ref: ref,
+      emergencyNumbers: emergencyNumbers,
+      safeword: safeword,
+      city: city,
     );
   }
 
@@ -77,18 +77,18 @@ class AuthController {
     );
   }
 
-  Stream<List<UserModel>> getListOfPatientsController() {
-    return authRepository.getListofPatients();
-  }
+  // Stream<List<UserModel>> getListOfPatientsController() {
+  //   return authRepository.getListofPatients();
+  // }
 
-  Stream<List<UserModel>> getListOfDoctorsController() {
-    return authRepository.getListofDoctors();
-  }
+  // Stream<List<UserModel>> getListOfDoctorsController() {
+  //   return authRepository.getListofDoctors();
+  // }
 
-  void savePatientToDoctorList({
-    required BuildContext context,
-    required String doctorId,
-  }) {
-    return authRepository.savePatientInDoctorList(context, doctorId);
-  }
+  // void savePatientToDoctorList({
+  //   required BuildContext context,
+  //   required String doctorId,
+  // }) {
+  //   return authRepository.savePatientInDoctorList(context, doctorId);
+  // }
 }

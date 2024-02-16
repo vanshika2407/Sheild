@@ -29,11 +29,11 @@ class ProfileDetailsRepository {
 
   Future<UserModel?> getDetails(BuildContext context) async {
     try {
-      UserModel docDetails;
+      UserModel details;
       var userData =
           await firestore.collection('users').doc(auth.currentUser!.uid).get();
-      docDetails = UserModel.fromMap(userData.data()!);
-      return docDetails;
+      details = UserModel.fromMap(userData.data()!);
+      return details;
     } catch (e) {
       showsnackbar(context: context, msg: e.toString());
     }
@@ -48,6 +48,11 @@ class ProfileDetailsRepository {
         userId: existingUser!.userId,
         phoneNumber: existingUser.phoneNumber,
         email: existingUser.email,
+        emergencyNumbers: existingUser.emergencyNumbers,
+        safeWord: existingUser.safeWord,
+        closeRelatives: existingUser.closeRelatives,
+        savedAddresses: existingUser.savedAddresses,
+        city: existingUser.city,
       );
       await firestore
           .collection('users')

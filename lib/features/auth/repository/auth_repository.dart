@@ -6,9 +6,11 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:she_secure/features/home/home_page.dart';
 
 import '../../../common/widgets/common_snackbar.dart';
 import '../../../models/user_model.dart';
+import '../user_information_screen.dart';
 
 final authRepositoryProvider = Provider((ref) {
   return AuthRepository(
@@ -25,21 +27,21 @@ class AuthRepository {
     required this.auth,
   });
 
-  void savePatientInDoctorList(BuildContext context, String doctorId) async {
-    try {
-      var userData =
-          await firestore.collection('users').doc(auth.currentUser?.uid).get();
-      UserModel user = UserModel.fromMap(userData.data()!);
-      await firestore
-          .collection('users')
-          .doc(doctorId)
-          .collection('patients')
-          .doc(auth.currentUser!.uid)
-          .set(user.toMap());
-    } catch (e) {
-      showsnackbar(context: context, msg: e.toString());
-    }
-  }
+  // void savePatientInDoctorList(BuildContext context, String doctorId) async {
+  //   try {
+  //     var userData =
+  //         await firestore.collection('users').doc(auth.currentUser?.uid).get();
+  //     UserModel user = UserModel.fromMap(userData.data()!);
+  //     await firestore
+  //         .collection('users')
+  //         .doc(doctorId)
+  //         .collection('patients')
+  //         .doc(auth.currentUser!.uid)
+  //         .set(user.toMap());
+  //   } catch (e) {
+  //     showsnackbar(context: context, msg: e.toString());
+  //   }
+  // }
 
   Future<String?> getCurrentUserData() async {
     var userData =
@@ -66,11 +68,11 @@ class AuthRepository {
         email: email,
         password: password,
       );
-      // Navigator.pushNamedAndRemoveUntil(
-      //   context,
-      //   DoctorUserInformationScreen.routeName,
-      //   (route) => false,
-      // );
+      Navigator.pushNamedAndRemoveUntil(
+        context,
+        UserInformationScreen.routeName,
+        (route) => false,
+      );
     } on FirebaseAuthException catch (e) {
       if (e.code == 'weak-password') {
         showsnackbar(
@@ -89,35 +91,40 @@ class AuthRepository {
   }
 
   void saveUserDataToFirebase({
+    required ProviderRef ref,
     required BuildContext context,
     required String name,
     required String phoneNumber,
-    required File? profilePic,
-    required ProviderRef ref,
-    String? expertise,
-    String? address,
+    required String safeword,
+    required List<String> emergencyNumbers,
+    required String city,
   }) async {
-    try {
-      String uid = auth.currentUser!.uid;
-      var user = UserModel(
-        name: name,
-        userId: 'doctor ${auth.currentUser!.uid}',
-        phoneNumber: phoneNumber,
-        email: auth.currentUser!.email!,
-      );
-      await firestore
-          .collection('users')
-          .doc(auth.currentUser!.uid)
-          .set(user.toMap());
-      // Navigator.pushNamedAndRemoveUntil(
-      //   context,
-      //   DoctorHomePage.routeName,
-      //   (route) => false,
-      // );
-      return;
-    } catch (e) {
-      showsnackbar(context: context, msg: e.toString());
-    }
+    // try {
+    String uid = auth.currentUser!.uid;
+    debugPrint(auth.currentUser!.email!);
+    var user = UserModel(
+      name: name,
+      userId: uid,
+      phoneNumber: phoneNumber,
+      email: auth.currentUser!.email!,
+      emergencyNumbers: emergencyNumbers,
+      safeWord: safeword,
+      city: city,
+    );
+    debugPrint(user.safeWord.toString());
+    await firestore
+        .collection('users')
+        .doc(auth.currentUser!.uid)
+        .set(user.toMap());
+    Navigator.pushNamedAndRemoveUntil(
+      context,
+      HomePage.routeName,
+      (route) => false,
+    );
+    return;
+    // } catch (e) {
+    //   showsnackbar(context: context, msg: e.toString());
+    // }
   }
 
   void signInWithEmailAndPassword({
@@ -128,47 +135,47 @@ class AuthRepository {
     try {
       await auth.signInWithEmailAndPassword(email: email, password: password);
 
-      // Navigator.pushNamedAndRemoveUntil(
-      //   context,
-      //   DoctorHomePage.routeName,
-      //   (route) => false,
-      // );
+      Navigator.pushNamedAndRemoveUntil(
+        context,
+        HomePage.routeName,
+        (route) => false,
+      );
       return;
     } catch (e) {
       showsnackbar(context: context, msg: e.toString());
     }
   }
 
-  Stream<List<UserModel>> getListofDoctors() {
-    return firestore
-        .collection('users')
-        .orderBy('name')
-        .snapshots()
-        .map((event) {
-      List<UserModel> doctors = [];
-      for (var element in event.docs) {
-        var doctorDetails = UserModel.fromMap(element.data());
-        if (doctorDetails.userId.startsWith('doctor')) {
-          doctors.add(UserModel.fromMap(element.data()));
-        }
-      }
-      debugPrint('$doctors');
-      return doctors;
-    });
-  }
+  // Stream<List<UserModel>> getListofDoctors() {
+  //   return firestore
+  //       .collection('users')
+  //       .orderBy('name')
+  //       .snapshots()
+  //       .map((event) {
+  //     List<UserModel> doctors = [];
+  //     for (var element in event.docs) {
+  //       var doctorDetails = UserModel.fromMap(element.data());
+  //       if (doctorDetails.userId.startsWith('doctor')) {
+  //         doctors.add(UserModel.fromMap(element.data()));
+  //       }
+  //     }
+  //     debugPrint('$doctors');
+  //     return doctors;
+  //   });
+  // }
 
-  Stream<List<UserModel>> getListofPatients() {
-    return firestore
-        .collection('users')
-        .doc(auth.currentUser!.uid)
-        .collection('patients')
-        .snapshots()
-        .map((event) {
-      List<UserModel> patients = [];
-      for (var element in event.docs) {
-        patients.add(UserModel.fromMap(element.data()));
-      }
-      return patients;
-    });
-  }
+  // Stream<List<UserModel>> getListofPatients() {
+  //   return firestore
+  //       .collection('users')
+  //       .doc(auth.currentUser!.uid)
+  //       .collection('patients')
+  //       .snapshots()
+  //       .map((event) {
+  //     List<UserModel> patients = [];
+  //     for (var element in event.docs) {
+  //       patients.add(UserModel.fromMap(element.data()));
+  //     }
+  //     return patients;
+  //   });
 }
+// }

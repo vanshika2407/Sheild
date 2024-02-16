@@ -4,6 +4,7 @@ import 'package:she_secure/features/home/home_page.dart';
 
 import '../../colors.dart';
 import '../../common/widgets/common_snackbar.dart';
+import 'controller/auth_controller.dart';
 
 class AuthScreen extends ConsumerStatefulWidget {
   const AuthScreen({super.key});
@@ -24,12 +25,11 @@ class _DoctorAuthState extends ConsumerState<AuthScreen> {
     var password = passwordController.text.trim();
 
     if (email.isNotEmpty && password.isNotEmpty) {
-      // ref.read(authControllerProvider).signInWithEmailAndPassword(
-      //       context: context,
-      //       email: email,
-      //       password: password,
-      //       type: UserTypeEnum.,
-      //     );
+      ref.read(authControllerProvider).signInWithEmailAndPassword(
+            context: context,
+            email: email,
+            password: password,
+          );
     } else {
       showsnackbar(
         context: context,
@@ -43,11 +43,11 @@ class _DoctorAuthState extends ConsumerState<AuthScreen> {
     var password = passwordController.text.trim();
 
     if (email.isNotEmpty && password.isNotEmpty) {
-      // ref.read(authControllerProvider).signUpWithPhone(
-      //   context: context,
-      //   email: email,
-      //   password: password,
-      // );
+      ref.read(authControllerProvider).signUpWithPhone(
+        context: context,
+        email: email,
+        password: password,
+      );
     } else {
       showsnackbar(
         context: context,
@@ -177,8 +177,8 @@ class _DoctorAuthState extends ConsumerState<AuthScreen> {
                         backgroundColor: tabColor,
                       ),
                       onPressed: () {
-                        // return isLogin ? login() : signUp();
-                        Navigator.of(context).pushNamed(HomePage.routeName);  
+                        return isLogin ? login() : signUp();
+                        // Navigator.of(context).pushNamed(HomePage.routeName);  
                       },
                       child: Text(
                         isLogin ? 'Login' : 'Sign Up',
