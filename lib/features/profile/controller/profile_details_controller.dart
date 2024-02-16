@@ -6,11 +6,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../models/user_model.dart';
 import '../repository/profile_details_repository.dart';
 
-
 final profileDetailsControllerProvider = Provider((ref) {
   final profileDetailsRepository = ref.watch(profileDetailsRepositoryProvider);
   return ProfileDetailsController(
-      profileDetailsRepository: profileDetailsRepository, ref: ref);
+    profileDetailsRepository: profileDetailsRepository,
+    ref: ref,
+  );
 });
 
 class ProfileDetailsController {
