@@ -34,10 +34,11 @@ dependencies:
   firebase_core: ^2.25.4
   flutter:
     sdk: flutter
-  flutter_riverpod: ^2.3.7
+  flutter_riverpod: ^2.4.10
   flutter_svg: ^2.0.9
   geolocator: ^10.1.0
   google_maps_flutter: ^2.5.3
+  google_nav_bar: ^5.0.6
   http: ^0.13.6
   intl: null
   permission_handler: ^11.1.0

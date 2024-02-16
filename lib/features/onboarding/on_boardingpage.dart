@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../colors.dart';
-import '../auth.dart/auth_screen.dart';
+import '../auth/auth_screen.dart';
 import 'widgets/onboarding_ui.dart';
 
 class OnBoardingPage extends StatefulWidget {

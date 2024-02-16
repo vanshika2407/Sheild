@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 import 'package:flutter/material.dart';
 
-const backgroundColor = Color.fromRGBO(19, 28, 33, 1);
-const textColor = Color.fromRGBO(241, 241, 242, 1);
+const backgroundColor = Color.fromRGBO(255, 255, 255, 1);
+const textColor = Color.fromRGBO(0, 0, 0, 1);
 const appBarColor = Color.fromRGBO(31, 44, 52, 1);
 const webAppBarColor = Color.fromRGBO(42, 47, 50, 1);
 const messageColor = Color.fromRGBO(5, 96, 98, 1);
@@ -16,4 +16,4 @@ const greyColor = Colors.grey;
 const blackColor = Colors.black;
 const whatsGreenColor = Color(0xFF128C7E);
 const whiteColor = Colors.white;
-const boxBorderColor = Colors.white;
+const boxBorderColor = Colors.black;

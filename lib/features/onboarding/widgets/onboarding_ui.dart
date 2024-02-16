@@ -45,7 +45,11 @@ class OnBoardingUi extends StatelessWidget {
                 child: Text(
                   description,
                   textAlign: TextAlign.center,
-                  style: const TextStyle(fontFamily: "Poppins", fontSize: 20),
+                  style: const TextStyle(
+                    fontFamily: "Poppins",
+                    fontSize: 20,
+                    color: blackColor,
+                  ),
                 ),
               ),
             ],

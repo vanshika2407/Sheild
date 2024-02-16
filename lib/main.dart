@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:she_secure/features/onboarding/on_boardingpage.dart';
 
 import 'colors.dart';
@@ -12,7 +13,7 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(SheSecure());
+  runApp(ProviderScope(child: SheSecure()));
 }
 
 class SheSecure extends StatelessWidget {
@@ -21,14 +22,13 @@ class SheSecure extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Suraksha',
-      theme: ThemeData.dark().copyWith(
+      theme: ThemeData.light().copyWith(
         scaffoldBackgroundColor: backgroundColor,
         appBarTheme: const AppBarTheme(color: appBarColor),
         bottomAppBarTheme: const BottomAppBarTheme(color: backgroundColor),
         bottomSheetTheme: const BottomSheetThemeData(
           backgroundColor: backgroundColor,
         ),
-        
       ),
       initialRoute: "/",
       onGenerateRoute: (settings) => generateRoute(settings),
