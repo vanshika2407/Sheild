@@ -16,6 +16,7 @@ class _DoctorMainPageState extends State<HomePage> {
   List pages = [
     const Dashboard(),
     const SettingsPage(),
+    const SettingsPage(),
   ];
 
   int _selectedIndex = 0;
