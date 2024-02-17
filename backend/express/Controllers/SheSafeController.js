@@ -22,7 +22,7 @@ const policeNearby = async (req, res, next) => {
         types: ["police"],
         location: `${currentLocation.lat},${currentLocation.lng}`,
         radius: 1000,
-        key: "AIzaSyD5fvYs9ENbAEbYROVycp3eVnkiEDceor0",
+        key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
       },
 
       timeout: 1000,
@@ -103,7 +103,7 @@ const MetroNearby = async (req, res, next) => {
         types: ["subway_station"],
         location: `${currentLocation.lat},${currentLocation.lng}`,
         radius: 1000,
-        key: "AIzaSyD5fvYs9ENbAEbYROVycp3eVnkiEDceor0",
+        key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
       },
 
       timeout: 1000,
@@ -167,7 +167,7 @@ const HospitalsNearby = async (req, res, next) => {
         types: ["hospital"],
         location: `${currentLocation.lat},${currentLocation.lng}`,
         radius: 1000,
-        key: "AIzaSyD5fvYs9ENbAEbYROVycp3eVnkiEDceor0",
+        key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
       },
 
       timeout: 1000,
@@ -231,7 +231,7 @@ const HotelsNearby = async (req, res, next) => {
         types: ["hotel"],
         location: `${currentLocation.lat},${currentLocation.lng}`,
         radius: 1000,
-        key: "AIzaSyD5fvYs9ENbAEbYROVycp3eVnkiEDceor0",
+        key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
       },
 
       timeout: 1000,
