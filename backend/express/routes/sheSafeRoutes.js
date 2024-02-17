@@ -16,29 +16,21 @@ router.get("/initiate-call-and-msg", async (req, res, next) => {
     const name = req.query.name;
     const lat = req.query.latitude;
     const lng = req.query.longitude;
-    const client = require('twilio')("ACb0bd2bde89479e44753306098a58d7b3", "e2e9396785dd81ac2df7ecfaf3c02c95");
+    const client = require('twilio')("AC706392020643ef46293ccb54c5b19028", "9b1168bc8bc5e4c259cdf6ed7c852835");
 
     // const client = require("twilio")(accountSid, authToken);
-    return await client.messages.create({
-      body: `EMERGENCY! ${name} need help!. Please send assistance immediately. Thank you!.`,
-      from: "whatsapp:+14155238886",
-      to: "whatsapp:+919545491506",
-      persistentAction: `geo:${lat},${lng}|${name}`,
-    });
+
     // Call voiceTwilio function
-    const voiceResult = await SOS.voiceTwilio(req);
+    // const voiceResult = await SOS.voiceTwilio(req);
 
     // Call sendWhatsapp function
     const whatsappResult = await SOS.sendWhatsapp(req);
 
     // Call sendMessage function
-    const sendMessageResult = await SOS.sendMessage(req);
+    // const sendMessageResult = await SOS.sendMessage(req);
 
     // Send a response indicating both actions were triggered
     res.status(200).json({
-      voiceResult,
-      whatsappResult,
-      sendMessageResult,
       message: "Voice call and message initiated successfully",
     });
   } catch (error) {

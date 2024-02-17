@@ -16,7 +16,7 @@ const policeNearby = async () => {
         types: ["police"],
         location: "19.132,72.8361",
         radius: 1000,
-        key: "AIzaSyD5fvYs9ENbAEbYROVycp3eVnkiEDceor0",
+        key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
       },
 
       timeout: 1000,
@@ -72,7 +72,7 @@ const MetroNearby = async () => {
         types: ["subway_station"],
         location: "19.132,72.8361",
         radius: 1000,
-        key: "AIzaSyD5fvYs9ENbAEbYROVycp3eVnkiEDceor0",
+        key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
       },
 
       timeout: 1000,
@@ -115,7 +115,7 @@ const HospitalsNearby = async () => {
         types: ["hospital"],
         location: "19.132,72.8361",
         radius: 1000,
-        key: "AIzaSyD5fvYs9ENbAEbYROVycp3eVnkiEDceor0",
+        key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
       },
 
       timeout: 1000,
@@ -157,7 +157,7 @@ const HotelsNearby = async () => {
         types: ["hotel"],
         location: "19.132,72.8361",
         radius: 1000,
-        key: "AIzaSyD5fvYs9ENbAEbYROVycp3eVnkiEDceor0",
+        key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
       },
 
       timeout: 1000,
@@ -199,9 +199,9 @@ function calculateDistance(point1, point2) {
   const a =
     Math.sin(dLat / 2) * Math.sin(dLat / 2) +
     Math.cos(degToRad(point1.lat)) *
-      Math.cos(degToRad(point2.lat)) *
-      Math.sin(dLng / 2) *
-      Math.sin(dLng / 2);
+    Math.cos(degToRad(point2.lat)) *
+    Math.sin(dLng / 2) *
+    Math.sin(dLng / 2);
 
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 
@@ -219,7 +219,7 @@ const Details = async (placeId) => {
     const p = await client.placeDetails({
       params: {
         place_id: placeId,
-        key: "AIzaSyD5fvYs9ENbAEbYROVycp3eVnkiEDceor0",
+        key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
       },
 
       timeout: 1000,
