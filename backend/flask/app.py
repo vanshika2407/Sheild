@@ -2,6 +2,8 @@ from flask import Flask, request, jsonify
 import requests
 import random
 from model import regressor, median_value
+
+# from sos import isSos
 import json
 import numpy as np
 
@@ -47,16 +49,28 @@ def jsonify_data(data):
     return json_data
 
 
+# @app.route("/isSos", methods=["POST"])
+# def check_sos():
+#     data = request.get_json()
+#     print(data)
+#     print(data["text"])
+
+#     print(data["safeword"])
+#     res = isSos(data["text"], data["safeword"])
+#     return
+
+
 @app.route("/safeScore", methods=["POST"])
 def safe_score():
     # load the json data into a dictionary
     departure_time = 0
     data = request.get_json()
     sf = []
-    for i in range(len(data)):
+    for k in range(len(data)):
         temp = []
-        for j in range(len(data[i])):
-            temp.append(data[i][j][-1])
+        for j in range(len(data[k])):
+            # print(data[i]["grouped"])
+            temp.append(data[k]["grouped"][j][-1])
 
         start = 00
         safety_score = []
@@ -98,7 +112,18 @@ def safe_score():
             if start > 23:
                 start = 0
 
-        sf.append({"scores": safety_score, "safety_score": avg / cnt})
+        print()
+        print(data[k]["polyline"])
+        print()
+        sf.append(
+            {
+                # "scores": safety_score,
+                "safety_score": avg / cnt,
+                "polyline": data[k]["polyline"],
+                "distance": data[k]["distance"],
+                "duration": data[k]["duration"],
+            }
+        )
         # print(response2.json()["allM"])
 
         # print(response.json()["allP"])
@@ -108,9 +133,7 @@ def safe_score():
     #     json.dump({"dt": data}, file)
     print(safety_score)
     return json.dumps(sf)
-    print(type(data))
-    print(data)
-    print("----")
+
     # Convert NumPy arrays to lists
     for route in data:
         for step in route:

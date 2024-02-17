@@ -9,7 +9,6 @@ Original file is located at
 
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 
 df1 = pd.read_csv("df1.csv")
 # df2=pd.read_csv('df2.csv')
