@@ -4,6 +4,7 @@ import 'package:she_secure/features/auth/user_information_screen.dart';
 import 'package:she_secure/features/home/home_page.dart';
 import 'package:she_secure/features/navigation/options.dart';
 import 'package:she_secure/features/navigation/routing.dart';
+import 'package:she_secure/features/safe_spaces/safe_spaces_screen.dart';
 
 import 'common/widgets/error.dart';
 import 'features/auth/auth_screen.dart';
@@ -34,6 +35,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const Options(),
       );
+
 
     default:
       return MaterialPageRoute(

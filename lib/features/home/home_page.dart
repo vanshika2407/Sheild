@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:she_secure/features/home/dashboard.dart';
 import 'package:she_secure/features/navigation/navigation.dart';
+import 'package:she_secure/features/safe_spaces/safe_spaces_screen.dart';
 
 import '../../colors.dart';
 import '../profile/screens/settings_screen.dart';
@@ -17,6 +18,7 @@ class _DoctorMainPageState extends State<HomePage> {
   List pages = [
     const Dashboard(),
     Navigationwidget(),
+    SafeSpacesScreen(),
     const SettingsPage(),
   ];
 
@@ -59,6 +61,13 @@ class _DoctorMainPageState extends State<HomePage> {
                   textColor: Colors.black,
                   iconColor: whiteColor,
                   textStyle: textStyle),
+              GButton(
+                icon: Icons.settings_outlined,
+                text: 'Safe Spaces',
+                textColor: Colors.black,
+                iconColor: whiteColor,
+                textStyle: textStyle,
+              ),
               GButton(
                 icon: Icons.settings_outlined,
                 text: 'Settings',

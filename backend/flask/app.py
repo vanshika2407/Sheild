@@ -56,7 +56,7 @@ def check_sos():
     print(dt)
     text = dt["text"]
     safeword = dt["safeword"]
-
+    
     res = isSos(text, safeword)
     print(res)
     return res
