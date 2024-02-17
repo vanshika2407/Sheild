@@ -10,6 +10,9 @@ import numpy as np
 app = Flask(__name__)
 
 
+
+
+# hello 
 def time_to_one_hot(hour, minute):
     # Define the number of four-hour intervals in a day
     num_intervals = 6
