@@ -83,7 +83,6 @@ class _RoutingwidgetState extends State<RoutingWidget> {
   }
 
   @override
-  @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return SafeArea(

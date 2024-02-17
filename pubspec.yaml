@@ -49,6 +49,7 @@ dependencies:
   location: ^5.0.3
   permission_handler: ^11.3.0
   smooth_page_indicator: ^1.1.0
+  speech_to_text: ^6.6.0
 dev_dependencies:
 
   # The "flutter_lints" package below contains a set of recommended lints to
