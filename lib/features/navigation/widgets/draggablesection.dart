@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:she_secure/features/navigation/widgets/searchbar.dart';
+import 'package:she_secure/features/navigation/routing.dart';
 
 class CDraggable extends ConsumerStatefulWidget {
-  const CDraggable({super.key});
+  const CDraggable({
+    required this.startLoc,
+    required this.destLoc,
+    super.key,
+    required this.title,
+  });
+
+  final String title;
+  final startLoc;
+  final destLoc;
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() => _CDraggableState();
@@ -11,7 +20,6 @@ class CDraggable extends ConsumerStatefulWidget {
 
 class _CDraggableState extends ConsumerState<CDraggable> {
   final sheet_controller = DraggableScrollableController();
-
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -21,7 +29,7 @@ class _CDraggableState extends ConsumerState<CDraggable> {
           controller: sheet_controller,
           initialChildSize: 0.2,
           minChildSize: 0.2,
-          maxChildSize: 0.78,
+          maxChildSize: 0.4,
           expand: true,
 
           // snap: true,
@@ -29,12 +37,15 @@ class _CDraggableState extends ConsumerState<CDraggable> {
           //   60 / constraints.maxHeight,
           //   0.5,
           // ],
-          builder: (BuildContext context, ScrollController scrollController) {
+          builder: (
+            BuildContext context,
+            ScrollController scrollController,
+          ) {
             return SingleChildScrollView(
               controller: scrollController,
               // physics: const BouncingScrollPhysics(),
               child: Container(
-                height: MediaQuery.of(context).size.height * 0.78,
+                height: MediaQuery.of(context).size.height * 0.4,
                 decoration: BoxDecoration(
                     // color: Colors.white.withOpacity(0.5),
                     color: Colors.blueGrey.withOpacity(0.8),
@@ -54,9 +65,42 @@ class _CDraggableState extends ConsumerState<CDraggable> {
                   physics: NeverScrollableScrollPhysics(),
                   child: Column(
                     children: [
-                      SearchBarWidget(
-                        baseTop: 20,
-                        height: 20,
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          widget.title,
+                          style: const TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(6.0),
+                            child: ElevatedButton(
+                              onPressed: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => RoutingWidget(
+                                      startLoc: widget.startLoc,
+                                      destLoc: widget.destLoc,
+                                    ),
+                                  ),
+                                );
+                              },
+                              child: Text('Directions'),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              child: Text('Start'),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),

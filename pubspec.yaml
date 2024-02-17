@@ -40,6 +40,7 @@ dependencies:
   flutter_svg: ^2.0.9
   geolocator: ^11.0.0
   google_api_headers: ^1.6.0
+  google_maps_apis: ^1.0.1+1
   google_maps_flutter: ^2.5.3
   google_maps_webservice: ^0.0.20-nullsafety.5
   google_nav_bar: ^5.0.6
@@ -48,6 +49,7 @@ dependencies:
   location: ^5.0.3
   permission_handler: ^11.3.0
   smooth_page_indicator: ^1.1.0
+  speech_to_text: ^6.6.0
 dev_dependencies:
 
   # The "flutter_lints" package below contains a set of recommended lints to
