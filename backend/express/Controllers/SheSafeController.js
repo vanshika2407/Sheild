@@ -64,10 +64,22 @@ const policeNearby = async (req, res, next) => {
     //   "Count: ",
     //   allP[2]
     // );
+    const newPlacesArrayP = placeIdsP.map((place) => {
+      return {
+        latitude: place.geometry.location.lat,
+        longitude: place.geometry.location.lng,
+        name: place.name,
+        phoneNumber:
+          place.formatted_phone_number?.place.formatted_phone_number || [],
+        weekdayText: place.current_opening_hours?.weekday_text || [],
+        formattedAddress: place.formatted_address,
+        rating: place.rating,
+      };
+    });
     policeObj = {
       policeJson: policeJson,
       allP: allP,
-      placeIdsP: placeIdsP,
+      placeIdsP: newPlacesArrayP,
     };
   } catch (error) {
     console.log(error);
@@ -116,10 +128,22 @@ const MetroNearby = async (req, res, next) => {
     allM.push(minDistanceM);
     allM.push(countM);
     MetroJson = JSON.stringify(mt.data);
+    const newPlacesArrayM = placeIdsM.map((place) => {
+      return {
+        latitude: place.geometry.location.lat,
+        longitude: place.geometry.location.lng,
+        name: place.name,
+        //phoneNumber:
+        // place.formatted_phone_number?.place.formatted_phone_number || [],
+        weekdayText: place.current_opening_hours?.weekday_text || [],
+        formattedAddress: place.formatted_address,
+        rating: place.rating,
+      };
+    });
     MetroObj = {
       MetroJson: MetroJson,
       allM: allM,
-      placeIdsM: placeIdsM,
+      placeIdsM: newPlacesArrayM,
     };
   } catch (error) {
     console.log(error);
@@ -131,8 +155,8 @@ const MetroNearby = async (req, res, next) => {
 //Hospitals
 const HospitalsNearby = async (req, res, next) => {
   const currentLocation = {
-    lat: req.params.latitude,
-    lng: req.params.longitude,
+    lat: req.query.latitude,
+    lng: req.query.longitude,
   };
   const distancesH = [];
   const allH = [];
@@ -141,7 +165,7 @@ const HospitalsNearby = async (req, res, next) => {
     const ht = await client.placesNearby({
       params: {
         types: ["hospital"],
-        location: "19.132,72.8361",
+        location: `${currentLocation.lat},${currentLocation.lng}`,
         radius: 1000,
         key: "AIzaSyD5fvYs9ENbAEbYROVycp3eVnkiEDceor0",
       },
@@ -171,10 +195,23 @@ const HospitalsNearby = async (req, res, next) => {
   } catch (error) {
     console.log(error);
   }
+
+  const newPlacesArrayH = placeIdsH.map((place) => {
+    return {
+      latitude: place.geometry.location.lat,
+      longitude: place.geometry.location.lng,
+      name: place.name,
+      phoneNumber:
+        place?.formatted_phone_number?.place?.formatted_phone_number || [],
+      weekdayText: place.current_opening_hours?.weekday_text || [],
+      formattedAddress: place.formatted_address,
+      rating: place.rating,
+    };
+  });
   const HospitalObj = {
     HospitalJson: HospitalJson,
     allH: allH,
-    placeIdsH: placeIdsH,
+    placeIdsH: newPlacesArrayH,
   };
   return res.status(200).json(HospitalObj);
 };
@@ -182,8 +219,8 @@ const HospitalsNearby = async (req, res, next) => {
 //Hotel
 const HotelsNearby = async (req, res, next) => {
   const currentLocation = {
-    lat: req.params.latitude,
-    lng: req.params.longitude,
+    lat: req.query.latitude,
+    lng: req.query.longitude,
   };
   const distancesHot = [];
   const allHot = [];
@@ -192,7 +229,7 @@ const HotelsNearby = async (req, res, next) => {
     const hot = await client.placesNearby({
       params: {
         types: ["hotel"],
-        location: "19.132,72.8361",
+        location: `${currentLocation.lat},${currentLocation.lng}`,
         radius: 1000,
         key: "AIzaSyD5fvYs9ENbAEbYROVycp3eVnkiEDceor0",
       },
@@ -223,10 +260,24 @@ const HotelsNearby = async (req, res, next) => {
   } catch (error) {
     console.log(error);
   }
+
+  const newPlacesArrayHot = placeIdsHotel.map((place) => {
+    return {
+      latitude: place.geometry.location.lat,
+      longitude: place.geometry.location.lng,
+      name: place.name,
+      phoneNumber:
+        place?.formatted_phone_number?.place?.formatted_phone_number || [],
+      weekdayText: place.current_opening_hours?.weekday_text || [],
+      formattedAddress: place.formatted_address,
+      rating: place.rating,
+    };
+  });
+
   const HotelsObj = {
     HotelsJson: HotelsJson,
     allHot: allHot,
-    placeIdsHotel: placeIdsHotel,
+    placeIdsHotel: newPlacesArrayHot,
   };
   return res.status(200).json(HotelsObj);
 };
@@ -240,9 +291,9 @@ function calculateDistance(point1, point2) {
   const a =
     Math.sin(dLat / 2) * Math.sin(dLat / 2) +
     Math.cos(degToRad(point1.lat)) *
-    Math.cos(degToRad(point2.lat)) *
-    Math.sin(dLng / 2) *
-    Math.sin(dLng / 2);
+      Math.cos(degToRad(point2.lat)) *
+      Math.sin(dLng / 2) *
+      Math.sin(dLng / 2);
 
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   const distance = R * c; // Distance in kilometers
