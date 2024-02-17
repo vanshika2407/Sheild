@@ -5,10 +5,12 @@ const axios = require("axios");
 
 const client = new Client({});
 
-router.get("/", async (req, res) => {
-    // const origin = req.query.origin;
-    // const destination = req.query.destination;
-    const routes = await getRoutes();
+router.post("/", async (req, res) => {
+    const origin = req.body.origin;
+    const destination = req.body.destination;
+    const routes = await getRoutes(origin, destination
+
+    );
 
     console.log(routes);
     try {
@@ -26,21 +28,25 @@ router.get("/", async (req, res) => {
     // res.json(response.data);
 });
 
-const getRoutes = async () => {
+const getRoutes = async (origin, destination) => {
     try {
         const dt = await client.directions({
             params: {
-                // origin: origin,
-                // destination: destination,
-                origin: ["19.132", "72.8361"],
-                destination: ["19.2062648", "72.8732485"],
-                key: "AIzaSyAgdWqFlB-negWJL6wAp1YsPg5ZoiamECI",
+                origin: origin,
+                destination: destination,
+                // origin: ["19.132", "72.8361"],
+                // destination: ["19.2062648", "72.8732485"],
+                key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
                 alternatives: true,
                 mode: ["driving", "walking", "transit"],
             },
             timeout: 1000,
         });
         const data = dt.data;
+
+        console.log("DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD")
+        console.log(dt.data)
+        console.log("DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD")
 
         // Initialize groupedSteps array to store the grouped steps for each route
         const groupedSteps = [];
