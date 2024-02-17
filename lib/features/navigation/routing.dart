@@ -1,19 +1,19 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:google_maps_apis/places.dart';
 import 'package:she_secure/colors.dart';
+import 'package:she_secure/features/navigation/route_tile.dart';
 import '../../keys.dart';
+import 'package:http/http.dart' as http;
 
 class RoutingWidget extends StatefulWidget {
   const RoutingWidget({
     Key? key,
-    this.startLoc,
-    this.destLoc,
   }) : super(key: key);
-  final startLoc;
-  final destLoc;
   static const routeName = '/routing';
 
   @override
@@ -23,29 +23,28 @@ class RoutingWidget extends StatefulWidget {
 class _RoutingwidgetState extends State<RoutingWidget> {
   var sessionToken = 'xyzabc_1234';
   late GoogleMapController mapController;
-  final TextEditingController startController = TextEditingController();
-  final TextEditingController destinationController = TextEditingController();
   Map<String, Marker> _markers = {};
   bool isLoading = false;
   bool isLocationLoading = false;
   var searchedLocation;
 
+  var routes;
+
   @override
-  void initState() {
-    super.initState();
-    startController.text = widget.startLoc["name"];
-    destinationController.text = widget.destLoc["name"];
-    Marker marker = Marker(
-      markerId: MarkerId(""),
-      position: LatLng(widget.startLoc["lat"], widget.startLoc["lng"]),
-    );
-    _markers[widget.startLoc["name"]] = marker;
-    marker = Marker(
-      markerId: MarkerId(""),
-      position: LatLng(widget.destLoc["lat"], widget.destLoc["lng"]),
-    );
-    _markers[widget.destLoc["name"]] = marker;
-  }
+  // void initState() {
+  //   // TODO: implement initState
+  //   super.initState();
+  //   Marker marker = Marker(
+  //     markerId: MarkerId(""),
+  //     position: LatLng(widget.startLoc["lat"], widget.startLoc["lng"]),
+  //   );
+  //   _markers[widget.startLoc["name"]] = marker;
+  //   marker = Marker(
+  //     markerId: MarkerId(""),
+  //     position: LatLng(widget.destLoc["lat"], widget.destLoc["lng"]),
+  //   );
+  //   _markers[widget.destLoc["name"]] = marker;
+  // }
 
   void _onMapCreated(GoogleMapController controller) {
     mapController = controller;
@@ -59,28 +58,7 @@ class _RoutingwidgetState extends State<RoutingWidget> {
     zoom: 13,
   );
 
-  void _onOptionSelected(String selectedName, double lati, double longi) {
-    setState(() {
-      destinationController.text = selectedName;
-      _markers.clear();
-      final Marker marker = Marker(
-        markerId: MarkerId(""),
-        position: LatLng(lati, longi),
-      );
-      _markers[""] = marker;
-      opt = [];
-      searchedLocation = {
-        "name": selectedName,
-      };
-      double zoomLevel = 15.0;
-      mapController.animateCamera(
-        CameraUpdate.newLatLngZoom(
-          LatLng(lati, longi),
-          zoomLevel,
-        ),
-      );
-    });
-  }
+  
 
   @override
   Widget build(BuildContext context) {
@@ -100,47 +78,6 @@ class _RoutingwidgetState extends State<RoutingWidget> {
                     markers: _markers.values.toSet(),
                   ),
                   if (isLocationLoading)
-                    Center(
-                      child: CircularProgressIndicator(),
-                    ),
-                ],
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-              decoration: BoxDecoration(
-                color: greyColor,
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(20),
-                  topRight: Radius.circular(20),
-                ),
-              ),
-              child: Column(
-                children: [
-                  TextField(
-                    controller: startController,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      hintText: 'Start Location...',
-                    ),
-                    onChanged: (value) async {
-                      // Handle text field changes
-                    },
-                  ),
-                  SizedBox(height: 10),
-                  TextField(
-                    controller: destinationController,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      hintText: 'Destination...',
-                    ),
-                    onChanged: (value) async {
-                      // Handle text field changes
-                    },
-                  ),
-                  if (isLoading)
                     Center(
                       child: CircularProgressIndicator(),
                     ),
