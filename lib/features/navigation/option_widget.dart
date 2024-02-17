@@ -20,7 +20,7 @@ class OptionsWidget extends StatelessWidget {
         itemCount: opt.length,
         itemBuilder: (context, index) => InkWell(
           onTap: () => onOptionSelected(
-            opt[index].name,
+            opt[index].name + opt[index].adrAddress,
             opt[index].geometry!.location.lat,
             opt[index].geometry!.location.lng,
           ),

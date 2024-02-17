@@ -20,16 +20,14 @@ class _SafeSpacesScreenState extends State<SafeSpacesScreen> {
   late Position _position;
   bool isLocationLoading = true;
 
-  void _onMapCreated(GoogleMapController controller) {
-    mapController = controller;
+  @override
+  void initState() {
+    super.initState();
+    _getUserLocation();
   }
 
-  void _initializeMap(double latitude, double longitude) {
-    CameraPosition userPosition = CameraPosition(
-      target: LatLng(latitude, longitude),
-      zoom: 15,
-    );
-    mapController.animateCamera(CameraUpdate.newCameraPosition(userPosition));
+  void _onMapCreated(GoogleMapController controller) {
+    mapController = controller;
   }
 
   Future<void> _getUserLocation() async {
@@ -83,33 +81,23 @@ class _SafeSpacesScreenState extends State<SafeSpacesScreen> {
   }
 
   @override
-  void initState() {
-    super.initState();
-    _getUserLocation();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Safe Spaces"),
       ),
       body: isLocationLoading
-          ? LoaderWidget()
-          : Stack(
-              children: [
-                GoogleMap(
-                  onMapCreated: _onMapCreated,
-                  initialCameraPosition: CameraPosition(
-                    target: LatLng(
-                      _position.latitude,
-                      _position.longitude,
-                    ),
-                    zoom: 15,
-                  ),
-                  markers: Set<Marker>.of(_markers),
+          ? Center(child: CircularProgressIndicator())
+          : GoogleMap(
+              onMapCreated: _onMapCreated,
+              initialCameraPosition: CameraPosition(
+                target: LatLng(
+                  _position.latitude,
+                  _position.longitude,
                 ),
-              ],
+                zoom: 15,
+              ),
+              markers: Set<Marker>.of(_markers),
             ),
     );
   }

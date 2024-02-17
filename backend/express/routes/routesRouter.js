@@ -6,11 +6,12 @@ const axios = require("axios");
 const client = new Client({});
 
 router.post("/", async (req, res) => {
-    const origin = req.body.origin;
-    const destination = req.body.destination;
-    const routes = await getRoutes(origin, destination
-
-    );
+  const origin = req.body.origin;
+  const destination = req.body.destination;
+  console.log("AAAAAAAAAAAAAAAa");
+  console.log(origin, destination);
+  console.log("AAAAAAAAAAAAAAAa");
+  const routes = await getRoutes(origin, destination);
 
   console.log(routes);
   try {
@@ -29,27 +30,28 @@ router.post("/", async (req, res) => {
 });
 
 const getRoutes = async (origin, destination) => {
-    try {
-        const dt = await client.directions({
-            params: {
-                origin: origin,
-                destination: destination,
-                // origin: ["19.132", "72.8361"],
-                // destination: ["19.2062648", "72.8732485"],
-                key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
-                alternatives: true,
-                mode: ["driving", "walking", "transit"],
-            },
-            timeout: 1000,
-        });
-        const data = dt.data;
+  console.log(origin, destination);
+  try {
+    const dt = await client.directions({
+      params: {
+        origin: origin,
+        destination: destination,
+        // origin: ["19.132", "72.8361"],
+        // destination: ["19.2062648", "72.8732485"],
+        key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
+        alternatives: true,
+        mode: ["driving", "walking", "transit"],
+      },
+      timeout: 1000,
+    });
+    const data = dt.data;
 
-        console.log("DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD")
-        console.log(dt.data)
-        console.log("DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD")
+    console.log("DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD");
+    console.log(dt.data);
+    console.log("DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD");
 
-        // Initialize groupedSteps array to store the grouped steps for each route
-        const groupedSteps = [];
+    // Initialize groupedSteps array to store the grouped steps for each route
+    const groupedSteps = [];
 
     // Iterate over each route
     for (let i = 0; i < data.routes.length; i++) {

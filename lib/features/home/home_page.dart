@@ -3,6 +3,7 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:she_secure/features/community/chat_screen.dart';
 import 'package:she_secure/features/home/dashboard.dart';
 import 'package:she_secure/features/navigation/navigation.dart';
+import 'package:she_secure/features/reports/reports.dart';
 import 'package:she_secure/features/safe_spaces/safe_spaces_screen.dart';
 
 import '../../colors.dart';
@@ -86,6 +87,14 @@ class _DoctorMainPageState extends State<HomePage> {
             },
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black,
+        onPressed: () {
+          Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => ReportsWidget(),
+          ));
+        },
       ),
     );
   }

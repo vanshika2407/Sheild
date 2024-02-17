@@ -11,7 +11,7 @@ import '../../keys.dart';
 import 'route_tile.dart';
 
 class Options extends StatefulWidget {
-  const Options({super.key, this.startLoc, this.destLoc});
+  const Options({Key? key, required this.startLoc, required this.destLoc}) : super(key: key);
   final startLoc;
   final destLoc;
   static const routeName = '/options';
@@ -48,16 +48,22 @@ class _OptionsState extends State<Options> {
     });
     debugPrint("start: thakur college");
     debugPrint("end: ${widget.destLoc["name"]}");
-    final url =
-        'http://10.0.2.2/routes/'; // Replace this with your actual API endpoint
+    const url =
+        'http://10.0.2.2/routes'; // Replace this with your actual API endpoint
 
     try {
-      final response = await http.get(Uri.parse(url), headers: {
-        "origin": "SPIT Andheri",
-        "destination": "Kalyan Station",
-      });
+      final response = await http.post(
+        Uri.parse(url),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: jsonEncode({
+          "origin": "Thakur College of Engineering and Technolgy, Kandivali",
+          "destination": widget.destLoc["name"],
+        }),
+      );
       debugPrint("resp ${response.statusCode.toString()}");
-
+      debugPrint(response.body);
       if (response.statusCode == 200) {
         final List<dynamic> decodedResponse = json.decode(response.body);
         setState(() {
@@ -168,7 +174,7 @@ class _OptionsState extends State<Options> {
           if (routes != null)
             Expanded(
               child: ListView.builder(
-                itemCount: 3,
+                itemCount: routes.length,
                 itemBuilder: (context, index) {
                   final route = routes[index];
                   return RouteTile(

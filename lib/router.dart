@@ -30,10 +30,6 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         builder: (context) => const RoutingWidget(),
       );
 
-    case Options.routeName:
-      return MaterialPageRoute(
-        builder: (context) => const Options(),
-      );
 
 
     default:
