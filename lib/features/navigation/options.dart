@@ -49,10 +49,13 @@ class _OptionsState extends State<Options> {
     debugPrint("start: thakur college");
     debugPrint("end: ${widget.destLoc["name"]}");
     final url =
-        'http://10.0.2.2/routes/?origin=spit%20andheri&destination=kalyan%20station'; // Replace this with your actual API endpoint
+        'http://10.0.2.2/routes/'; // Replace this with your actual API endpoint
 
     try {
-      final response = await http.get(Uri.parse(url));
+      final response = await http.get(Uri.parse(url), headers: {
+        "origin": "SPIT Andheri",
+        "destination": "Kalyan Station",
+      });
       debugPrint("resp ${response.statusCode.toString()}");
 
       if (response.statusCode == 200) {
