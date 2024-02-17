@@ -17,12 +17,13 @@ const policeNearby = async (req, res, next) => {
   let policeObj = {};
   try {
     const allP = [];
+    console.log("currentLocation", currentLocation);
     const dt = await client.placesNearby({
       params: {
         types: ["police"],
         location: `${currentLocation.lat},${currentLocation.lng}`,
         radius: 1000,
-        key: "AIzaSyD5fvYs9ENbAEbYROVycp3eVnkiEDceor0",
+        key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
       },
 
       timeout: 1000,
@@ -70,7 +71,7 @@ const policeNearby = async (req, res, next) => {
         longitude: place.geometry.location.lng,
         name: place.name,
         phoneNumber:
-          place.formatted_phone_number?.place.formatted_phone_number || [],
+          place?.formatted_phone_number?.place?.formatted_phone_number || [],
         weekdayText: place.current_opening_hours?.weekday_text || [],
         formattedAddress: place.formatted_address,
         rating: place.rating,
@@ -81,10 +82,10 @@ const policeNearby = async (req, res, next) => {
       allP: allP,
       placeIdsP: newPlacesArrayP,
     };
+    return res.status(200).json(policeObj);
   } catch (error) {
     console.log(error);
   }
-  return res.status(200).json(policeObj);
 };
 
 //Metro Stations
@@ -103,7 +104,7 @@ const MetroNearby = async (req, res, next) => {
         types: ["subway_station"],
         location: `${currentLocation.lat},${currentLocation.lng}`,
         radius: 1000,
-        key: "AIzaSyD5fvYs9ENbAEbYROVycp3eVnkiEDceor0",
+        key: "AIzaSyAgdWqFlB-negWJL6wAp1YsPg5ZoiamECI",
       },
 
       timeout: 1000,
@@ -145,11 +146,11 @@ const MetroNearby = async (req, res, next) => {
       allM: allM,
       placeIdsM: newPlacesArrayM,
     };
+    return res.status(200).json(MetroObj);
   } catch (error) {
     console.log(error);
   }
   // console.log(MetroObj);
-  return res.status(200).json(MetroObj);
 };
 
 //Hospitals
@@ -167,7 +168,7 @@ const HospitalsNearby = async (req, res, next) => {
         types: ["hospital"],
         location: `${currentLocation.lat},${currentLocation.lng}`,
         radius: 1000,
-        key: "AIzaSyD5fvYs9ENbAEbYROVycp3eVnkiEDceor0",
+        key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
       },
 
       timeout: 1000,
@@ -231,7 +232,7 @@ const HotelsNearby = async (req, res, next) => {
         types: ["hotel"],
         location: `${currentLocation.lat},${currentLocation.lng}`,
         radius: 1000,
-        key: "AIzaSyD5fvYs9ENbAEbYROVycp3eVnkiEDceor0",
+        key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
       },
 
       timeout: 1000,
@@ -291,9 +292,9 @@ function calculateDistance(point1, point2) {
   const a =
     Math.sin(dLat / 2) * Math.sin(dLat / 2) +
     Math.cos(degToRad(point1.lat)) *
-      Math.cos(degToRad(point2.lat)) *
-      Math.sin(dLng / 2) *
-      Math.sin(dLng / 2);
+    Math.cos(degToRad(point2.lat)) *
+    Math.sin(dLng / 2) *
+    Math.sin(dLng / 2);
 
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   const distance = R * c; // Distance in kilometers
@@ -310,7 +311,7 @@ const Details = async (placeId) => {
     const p = await client.placeDetails({
       params: {
         place_id: placeId,
-        key: "AIzaSyD5fvYs9ENbAEbYROVycp3eVnkiEDceor0",
+        key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
       },
 
       timeout: 1000,
