@@ -3,7 +3,7 @@ import requests
 import random
 from model import regressor, median_value
 
-# from sos import isSos
+from sos import isSos
 import json
 import numpy as np
 
@@ -52,15 +52,14 @@ def jsonify_data(data):
     return json_data
 
 
-# @app.route("/isSos", methods=["POST"])
-# def check_sos():
-#     data = request.get_json()
-#     print(data)
-#     print(data["text"])
+@app.route("/isSos", methods=["GET"])
+def check_sos():
+    text = request.args.get("text")
+    safeword = request.args.get("safeword")
 
-#     print(data["safeword"])
-#     res = isSos(data["text"], data["safeword"])
-#     return
+    res = isSos(text, safeword)
+    print(res)
+    return res
 
 
 @app.route("/safeScore", methods=["POST"])
