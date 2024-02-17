@@ -51,6 +51,10 @@ const getRoutes = async (origin, destination) => {
         // Iterate over each route
         for (let i = 0; i < data.routes.length; i++) {
             const route = data.routes[i];
+            // console.log(route.legs[0]);
+            console.log("--")
+            console.log(route.overview_polyline);
+            console.log("--")
             const steps = route.legs[0].steps;
             let currentGroup = [];
             let currentDistance = 0;
@@ -92,7 +96,12 @@ const getRoutes = async (origin, destination) => {
             }
 
             // Push the grouped steps for the current route to groupedSteps array
-            groupedSteps.push(routeGroupedSteps);
+            groupedSteps.push({
+                grouped: routeGroupedSteps,
+                polyline: route.overview_polyline,
+                distance: route.legs[0].distance.text,
+                duration: route.legs[0].duration.text,
+            });
         }
 
         // Now groupedSteps contains grouped steps for each route
