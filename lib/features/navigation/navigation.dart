@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, use_build_context_synchronously
 
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
@@ -28,6 +28,7 @@ class _NavigationwidgetState extends State<Navigationwidget> {
   bool isLoading = false;
   bool isLocationLoading = false;
   var searchedLocation;
+  late Position _position;
 
   @override
   void initState() {
@@ -61,18 +62,18 @@ class _NavigationwidgetState extends State<Navigationwidget> {
     setState(() {
       isLocationLoading = true;
     });
-    Position position = await Geolocator.getCurrentPosition(
+    _position = await Geolocator.getCurrentPosition(
       desiredAccuracy: LocationAccuracy.high,
     );
     setState(() {
       isLocationLoading = false;
       final Marker marker = Marker(
         markerId: MarkerId("user_location"),
-        position: LatLng(position.latitude, position.longitude),
+        position: LatLng(_position.latitude, _position.longitude),
         icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueRed),
       );
       _markers["user_location"] = marker;
-      _initializeMap(position.latitude, position.longitude);
+      _initializeMap(_position.latitude, _position.longitude);
     });
   }
 
@@ -104,6 +105,8 @@ class _NavigationwidgetState extends State<Navigationwidget> {
       opt = [];
       searchedLocation = {
         "name": selectedName,
+        "lat": lati,
+        "lng": longi,
       };
       double zoomLevel = 15.0;
       mapController.animateCamera(
@@ -209,6 +212,12 @@ class _NavigationwidgetState extends State<Navigationwidget> {
                 GestureDetector(
                   child: CDraggable(
                     title: searchedLocation["name"],
+                    startLoc: {
+                      "name": "Your Location",
+                      "lat": _position.latitude,
+                      "lng": _position.longitude,
+                    },
+                    destLoc: searchedLocation,
                   ),
                 ),
             ],

@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:she_secure/features/navigation/widgets/searchbar.dart';
+import 'package:she_secure/features/navigation/routing.dart';
 
 class CDraggable extends ConsumerStatefulWidget {
-  const CDraggable({super.key, required this.title});
+  const CDraggable({
+    required this.startLoc,
+    required this.destLoc,
+    super.key,
+    required this.title,
+  });
 
   final String title;
+  final startLoc;
+  final destLoc;
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() => _CDraggableState();
@@ -58,11 +65,42 @@ class _CDraggableState extends ConsumerState<CDraggable> {
                   physics: NeverScrollableScrollPhysics(),
                   child: Column(
                     children: [
-                      Text(
-                        widget.title,
-                        style: TextStyle(
-                          fontSize: 20,
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          widget.title,
+                          style: const TextStyle(
+                            fontSize: 20,
+                          ),
                         ),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(6.0),
+                            child: ElevatedButton(
+                              onPressed: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => RoutingWidget(
+                                      startLoc: widget.startLoc,
+                                      destLoc: widget.destLoc,
+                                    ),
+                                  ),
+                                );
+                              },
+                              child: Text('Directions'),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              child: Text('Start'),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
