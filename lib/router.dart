@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:she_secure/features/auth/user_information_screen.dart';
 import 'package:she_secure/features/home/home_page.dart';
+import 'package:she_secure/features/navigation/options.dart';
 import 'package:she_secure/features/navigation/routing.dart';
 
 import 'common/widgets/error.dart';
@@ -27,6 +28,11 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     case RoutingWidget.routeName:
       return MaterialPageRoute(
         builder: (context) => const RoutingWidget(),
+      );
+
+    case Options.routeName:
+      return MaterialPageRoute(
+        builder: (context) => const Options(),
       );
 
     default:

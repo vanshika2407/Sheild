@@ -3,13 +3,16 @@ import requests
 import random
 from model import regressor, median_value
 
-# from sos import isSos
+from sos import isSos
 import json
 import numpy as np
 
 app = Flask(__name__)
 
 
+
+
+# hello 
 def time_to_one_hot(hour, minute):
     # Define the number of four-hour intervals in a day
     num_intervals = 6
@@ -49,15 +52,14 @@ def jsonify_data(data):
     return json_data
 
 
-# @app.route("/isSos", methods=["POST"])
-# def check_sos():
-#     data = request.get_json()
-#     print(data)
-#     print(data["text"])
+@app.route("/isSos", methods=["POST"])
+def check_sos():
+    text = request.data.get("text")
+    safeword = request.data.get("safeword")
 
-#     print(data["safeword"])
-#     res = isSos(data["text"], data["safeword"])
-#     return
+    res = isSos(text, safeword)
+    print(res)
+    return res
 
 
 @app.route("/safeScore", methods=["POST"])
