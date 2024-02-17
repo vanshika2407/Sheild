@@ -10,9 +10,7 @@ import numpy as np
 app = Flask(__name__)
 
 
-
-
-# hello 
+# hello
 def time_to_one_hot(hour, minute):
     # Define the number of four-hour intervals in a day
     num_intervals = 6
@@ -54,8 +52,10 @@ def jsonify_data(data):
 
 @app.route("/isSos", methods=["POST"])
 def check_sos():
-    text = request.data.get("text")
-    safeword = request.data.get("safeword")
+    dt = request.get_json()
+    print(dt)
+    text = dt["text"]
+    safeword = dt["safeword"]
 
     res = isSos(text, safeword)
     print(res)
@@ -82,11 +82,11 @@ def safe_score():
 
             params = {"latitude": temp[i][0], "longitude": temp[i][1]}
             response = requests.get("http://localhost/police", params=params)
-            response2 = requests.get("http://localhost/metro", params=params)
+            response2 = requests.get("ahttp://localhost/metro", params=params)
 
             # Store the response JSON in a file
             # with open("response.json", "w") as file:
-
+            print(response.json())
             allP = response.json()["allP"]
             allM = response2.json()["allM"]
             nearestP = allP[0]

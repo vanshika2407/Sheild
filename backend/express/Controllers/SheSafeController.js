@@ -17,6 +17,7 @@ const policeNearby = async (req, res, next) => {
   let policeObj = {};
   try {
     const allP = [];
+    console.log("currentLocation", currentLocation);
     const dt = await client.placesNearby({
       params: {
         types: ["police"],
@@ -70,7 +71,7 @@ const policeNearby = async (req, res, next) => {
         longitude: place.geometry.location.lng,
         name: place.name,
         phoneNumber:
-          place.formatted_phone_number?.place.formatted_phone_number || [],
+          place?.formatted_phone_number?.place?.formatted_phone_number || [],
         weekdayText: place.current_opening_hours?.weekday_text || [],
         formattedAddress: place.formatted_address,
         rating: place.rating,
@@ -81,10 +82,10 @@ const policeNearby = async (req, res, next) => {
       allP: allP,
       placeIdsP: newPlacesArrayP,
     };
+    return res.status(200).json(policeObj);
   } catch (error) {
     console.log(error);
   }
-  return res.status(200).json(policeObj);
 };
 
 //Metro Stations
@@ -145,11 +146,11 @@ const MetroNearby = async (req, res, next) => {
       allM: allM,
       placeIdsM: newPlacesArrayM,
     };
+    return res.status(200).json(MetroObj);
   } catch (error) {
     console.log(error);
   }
   // console.log(MetroObj);
-  return res.status(200).json(MetroObj);
 };
 
 //Hospitals
@@ -310,7 +311,7 @@ const Details = async (placeId) => {
     const p = await client.placeDetails({
       params: {
         place_id: placeId,
-        key: "AIzaSyD5fvYs9ENbAEbYROVycp3eVnkiEDceor0",
+        key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
       },
 
       timeout: 1000,
