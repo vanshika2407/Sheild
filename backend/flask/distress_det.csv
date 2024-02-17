@@ -1,0 +1,41 @@
+sentences,distress
+I think someone is following me.,1
+I feel uncomfortable with that person staring at me.,1
+I'm lost and don't know how to get back to my hotel.,1
+I'm feeling unsafe in this area.,1
+"My phone battery is low, and I can't call for help.",1
+I'm being harassed by someone on public transportation.,1
+I need help,1
+I'm feeling dizzy and unwell; I might need medical assistance.,1
+"I'm being approached by a group of people, and I'm scared.",1
+I need help! I feel unsafe and threatened by the person following me.,1
+Emergency! I'm lost in this unfamiliar area and feeling panicked.,1
+I'm feeling vulnerable and alone after being harassed on the street.,1
+stranded on the side of the road.,1
+I'm in danger! There's a suspicious individual lurking nearby.,1
+I'm feeling terrified and traumatized after the alarming incident.,1
+"I'm in distress! I've screamed for help, but nobody seems to hear me.",1
+I'm feeling abandoned and vulnerable in this unfamiliar environment.,1
+Help! I'm stranded without any means of transportation.,1
+Emergency! I've encountered a dangerous situation and need,1
+How's your journey going so far.,0
+Have you visited any interesting places on your trip.,0
+What's the local cuisine like in this area.,0
+Are you planning to explore any landmarks or attractions.,0
+Have you tried using public transportation here.,0
+How are you finding the accommodation.,0
+Do you need any recommendations for places to visit.,0
+Have you met any friendly locals during your travels.,0
+What mode of transportation are you using for your trip.,0
+"Excuse me, does this bus/train go to destination.",0
+Is this the right stop for destination.,0
+Could you please let me know when we reach destination.,0
+How much is the fare for this route.,0
+Are there any transfers I need to make to reach destination.,0
+Does this bus/train stop at landmark.,0
+How long does it take to get to destination from here.,0
+Is there a timetable or schedule for this route.,0
+Are there any delays or disruptions on this route.,0
+Could you tell me where the nearest subway station is.,0
+Are there any seats available.,0
+Could you please announce the next stop.,0

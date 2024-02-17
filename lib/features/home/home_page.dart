@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:she_secure/features/community/chat_screen.dart';
 import 'package:she_secure/features/home/dashboard.dart';
 import 'package:she_secure/features/navigation/navigation.dart';
+import 'package:she_secure/features/safe_spaces/safe_spaces_screen.dart';
 
 import '../../colors.dart';
 import '../profile/screens/settings_screen.dart';
@@ -15,8 +17,9 @@ class HomePage extends StatefulWidget {
 
 class _DoctorMainPageState extends State<HomePage> {
   List pages = [
-    const Dashboard(),
     Navigationwidget(),
+    SafeSpacesScreen(),
+    ChatScreen(),
     const SettingsPage(),
   ];
 
@@ -48,17 +51,24 @@ class _DoctorMainPageState extends State<HomePage> {
             tabs: [
               GButton(
                 icon: Icons.dashboard_sharp,
-                text: 'Dashboard',
+                text: 'Map',
                 textColor: blackColor,
                 iconColor: whiteColor,
                 textStyle: textStyle,
               ),
               GButton(
                   icon: Icons.people_alt_sharp,
-                  text: 'Map',
+                  text: 'Safe Spaces',
                   textColor: Colors.black,
                   iconColor: whiteColor,
                   textStyle: textStyle),
+              GButton(
+                icon: Icons.settings_outlined,
+                text: 'Community',
+                textColor: Colors.black,
+                iconColor: whiteColor,
+                textStyle: textStyle,
+              ),
               GButton(
                 icon: Icons.settings_outlined,
                 text: 'Settings',

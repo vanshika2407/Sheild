@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:she_secure/features/navigation/options.dart';
 import 'package:she_secure/features/navigation/routing.dart';
 
 class CDraggable extends ConsumerStatefulWidget {
@@ -83,7 +84,7 @@ class _CDraggableState extends ConsumerState<CDraggable> {
                               onPressed: () {
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
-                                    builder: (context) => RoutingWidget(
+                                    builder: (context) => Options(
                                       startLoc: widget.startLoc,
                                       destLoc: widget.destLoc,
                                     ),

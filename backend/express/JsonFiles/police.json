@@ -1,0 +1,109 @@
+{
+  "html_attributions": [],
+  "result": {
+    "address_components": [
+      {
+        "long_name": "4RMQ+P3V",
+        "short_name": "4RMQ+P3V",
+        "types": ["plus_code"]
+      },
+      {
+        "long_name": "Prathmesh Complex",
+        "short_name": "Prathmesh Complex",
+        "types": ["sublocality_level_2", "sublocality", "political"]
+      },
+      {
+        "long_name": "Jogeshwari West",
+        "short_name": "Jogeshwari West",
+        "types": ["sublocality_level_1", "sublocality", "political"]
+      },
+      {
+        "long_name": "Mumbai",
+        "short_name": "Mumbai",
+        "types": ["locality", "political"]
+      },
+      {
+        "long_name": "Mumbai Suburban",
+        "short_name": "Mumbai Suburban",
+        "types": ["administrative_area_level_3", "political"]
+      },
+      {
+        "long_name": "Konkan Division",
+        "short_name": "Konkan Division",
+        "types": ["administrative_area_level_2", "political"]
+      },
+      {
+        "long_name": "Maharashtra",
+        "short_name": "MH",
+        "types": ["administrative_area_level_1", "political"]
+      },
+      {
+        "long_name": "India",
+        "short_name": "IN",
+        "types": ["country", "political"]
+      },
+      {
+        "long_name": "400047",
+        "short_name": "400047",
+        "types": ["postal_code"]
+      }
+    ],
+    "adr_address": "4RMQ+P3V, <span class=\"extended-address\">Prathmesh Complex, Jogeshwari West</span>, <span class=\"locality\">Mumbai</span>, <span class=\"region\">Maharashtra</span> <span class=\"postal-code\">400047</span>, <span class=\"country-name\">India</span>",
+    "business_status": "OPERATIONAL",
+    "formatted_address": "4RMQ+P3V, Prathmesh Complex, Jogeshwari West, Mumbai, Maharashtra 400047, India",
+    "geometry": {
+      "location": { "lat": 19.1343568, "lng": 72.837659 },
+      "viewport": {
+        "northeast": { "lat": 19.1357063802915, "lng": 72.8390416302915 },
+        "southwest": { "lat": 19.1330084197085, "lng": 72.8363436697085 }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/civic_building-71.png",
+    "icon_background_color": "#7B9EB0",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/civic-bldg_pinlet",
+    "name": "Amboli Police Chowki",
+    "photos": [
+      {
+        "height": 4000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114726081682436133238\">Shahid Shaikh</a>"
+        ],
+        "photo_reference": "ATplDJZyYOLTXKkGQi3pWxObhQX2xOMLZgzThcXnXTbOF5t4uilNrUCplbRVrQ1tEx8Ws7L_FiHCTrjPe763EvT_zIUy7xrmCIVE8-OV-l9akGPDYDsDNReQUv8p3x_RUj-gXe9RnR-24f0WgjO7hE0y8oCMauEhGLVyATpI7tYxlofuqN-q",
+        "width": 2250
+      }
+    ],
+    "place_id": "ChIJwwdaWgO35zsR9K195HN0YSU",
+    "rating": 5,
+    "reference": "ChIJwwdaWgO35zsR9K195HN0YSU",
+    "reviews": [
+      {
+        "author_name": "Shahid Shaikh",
+        "author_url": "https://www.google.com/maps/contrib/114726081682436133238/reviews",
+        "language": "en",
+        "original_language": "en",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU4jU3SvL2h0MXsLzB0ZLwpNYeb57o_9NuPEkM2B0qRWTs=s128-c0x00000000-cc-rp-mo-ba6",
+        "rating": 5,
+        "relative_time_description": "2 years ago",
+        "text": "mumbai police is the best police ❤️",
+        "time": 1636973971,
+        "translated": false
+      },
+      {
+        "author_name": "Keerti Gupta",
+        "author_url": "https://www.google.com/maps/contrib/107492186962188703746/reviews",
+        "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXML1y-BHEeciGyC_PaDbOq8mj2aHpV9ixomNzUxXB4K2A=s128-c0x00000000-cc-rp-mo",
+        "rating": 5,
+        "relative_time_description": "3 years ago",
+        "text": "",
+        "time": 1595755526,
+        "translated": false
+      }
+    ],
+    "types": ["police", "point_of_interest", "establishment"],
+    "url": "https://maps.google.com/?cid=2693562093247770100",
+    "user_ratings_total": 2,
+    "utc_offset": 330,
+    "vicinity": "4RMQ+P3V, Prathmesh Complex, Jogeshwari West, Mumbai"
+  },
+  "status": "OK"
+}
