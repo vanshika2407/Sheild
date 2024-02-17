@@ -49,10 +49,10 @@ def jsonify_data(data):
     return json_data
 
 
-@app.route("/isSos", methods=["GET"])
+@app.route("/isSos", methods=["POST"])
 def check_sos():
-    text = request.args.get("text")
-    safeword = request.args.get("safeword")
+    text = request.data.get("text")
+    safeword = request.data.get("safeword")
 
     res = isSos(text, safeword)
     print(res)
