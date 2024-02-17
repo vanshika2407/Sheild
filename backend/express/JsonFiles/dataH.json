@@ -1,0 +1,720 @@
+{
+  "html_attributions": [],
+  "next_page_token": "ATplDJboyIbAR7NHE2PExE5uISOLa0UvMnx9HkP8UZC0Bl_VI68IflT2bXo5HpkY8FfKsemzgJmq2saMZBJnIkwMitqCodbwb4-G6ZmGBi8RHWfMPbdZX5hlI0duIR20X3ZLtmLNMgEeKPEhfYC8yoBnsy1lnvXbSNuPHe_XqnveDPCmo4wWaoYhlkL1o1N0XekCkHRhmNUn3PeuvhjxsNkQhjoWXz1_Frl4Akcu_eNCNniyvMpN7-pakG9Ws9iOvDL8V9O1GKKwNnXRTBKScntFzbgOkSRrjw18KETmghRCBwjKmu9tm8-IBcAXnl936ek6T7FT9fCU709g0V6GEU1OHI0Dn-LdKrZ3VW8-Da6mUVfyAaQPIwmLpsA-rSIragZYZpq_t6zJV9Lf0QsyDVSZIbHmZAXwmHHp7nxdb9-qqvwUeDTF75oJ415Mww",
+  "results": [
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1360271, "lng": 72.8353016 },
+        "viewport": {
+          "northeast": { "lat": 19.1372630802915, "lng": 72.83667993029151 },
+          "southwest": { "lat": 19.1345651197085, "lng": 72.83398196970849 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Just Diabetes",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 2160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109221841019699779982\">Akshay Satpute</a>"
+          ],
+          "photo_reference": "ATplDJbji6oTNAn1K6BXQPqdOc72t29hvi6o7GHdcIocRhMqznFa12cKdvzWDkAF0TDiI-qn5ZTuvqp2YBwu9600s6Pqes6FxuiaG3LE7xgiQ8umfTZSR87Zvp91gUBwBO_VD3Ht0fI_Eyp3WL0gN2vp7WbNE1lAmxzgaUSlBTYM3FTMuVjm",
+          "width": 3840
+        }
+      ],
+      "place_id": "ChIJe5XH8iS25zsRYhFuK1K9aaY",
+      "plus_code": {
+        "compound_code": "4RPP+C4 Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RPP+C4"
+      },
+      "rating": 3.7,
+      "reference": "ChIJe5XH8iS25zsRYhFuK1K9aaY",
+      "scope": "GOOGLE",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 3,
+      "vicinity": "beside Balaji Telefilms, 201, SharyansAudeus, Fun Republic Cinema Lane, Near Hard Rock Cafe, Off Veera Desai Road, Andheri West, beside Balaji Telefilms, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.129119, "lng": 72.8330423 },
+        "viewport": {
+          "northeast": { "lat": 19.1305218802915, "lng": 72.8343918802915 },
+          "southwest": { "lat": 19.1278239197085, "lng": 72.8316939197085 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/school_pinlet",
+      "name": "Futuredent",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 5472,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108714913290702688756\">Support directindia</a>"
+          ],
+          "photo_reference": "ATplDJYE1w42HXjqPW0koGadhyjJqZPVyR8abp8cIfk-Z9wW89go8d-RuNNUpoGu-6VEPJXOpoROh_7cTEWF_StXZbDuJF4uBLXrDoo4GnjmyraQ2-4jm2teXgUJ3FeG0v50kuWKuxdNdE6Tt91rdOg6hcJ3Dm1k8lIkd9s6lqKW_V8YDVcw",
+          "width": 3648
+        }
+      ],
+      "place_id": "ChIJq6qqGie25zsRjIih6chwvLo",
+      "plus_code": {
+        "compound_code": "4RHM+J6 Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RHM+J6"
+      },
+      "rating": 4,
+      "reference": "ChIJq6qqGie25zsRjIih6chwvLo",
+      "scope": "GOOGLE",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 2,
+      "vicinity": "7/ 101 - 102, Sapphire Court, Behind Apna Bazar, Azad Nagar, J. P, Road, Andheri West - Azad Nagar,, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1316248, "lng": 72.8361141 },
+        "viewport": {
+          "northeast": { "lat": 19.1330364302915, "lng": 72.8374687802915 },
+          "southwest": { "lat": 19.1303384697085, "lng": 72.83477081970848 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Dr. Goenka's Clinic",
+      "place_id": "ChIJJRmXjSa25zsRPD4Oj1wrPls",
+      "plus_code": {
+        "compound_code": "4RJP+JC Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RJP+JC"
+      },
+      "reference": "ChIJJRmXjSa25zsRPD4Oj1wrPls",
+      "scope": "GOOGLE",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "vicinity": "Shop No. 8, Parul Apartments, beside Skoda Showroom, Off Veera Desai Road, Andheri East, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1308641, "lng": 72.83727189999999 },
+        "viewport": {
+          "northeast": { "lat": 19.1322141802915, "lng": 72.8387486802915 },
+          "southwest": { "lat": 19.1295162197085, "lng": 72.83605071970848 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Nuface Cleft & Maxillofacial Surgery Clinic",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 1040,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103254462995335940287\">Nuface Cleft &amp; Maxillofacial Surgery Clinic</a>"
+          ],
+          "photo_reference": "ATplDJZzqc7r7z9qyhc_j6kZwW9D51DdNjx0Q0XSjal6ZaRpeh2jqx_M1JGOMjNjtLoUjwk-4AXimZgy2cl7W3F2ue96tX0nXoUsLXLMN_b0T9YiXuWulPHj878piEztkev68JnZHaYc6y_iIJQuy6OL_HxRAPyGnbn2c1LNKZLiBA4hGCXO",
+          "width": 1397
+        }
+      ],
+      "place_id": "ChIJXTdeVya25zsRrXJCxxw3EIY",
+      "plus_code": {
+        "compound_code": "4RJP+8W Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RJP+8W"
+      },
+      "rating": 5,
+      "reference": "ChIJXTdeVya25zsRrXJCxxw3EIY",
+      "scope": "GOOGLE",
+      "types": [
+        "hospital",
+        "doctor",
+        "dentist",
+        "point_of_interest",
+        "health",
+        "establishment"
+      ],
+      "user_ratings_total": 725,
+      "vicinity": "Bldg No. 42, B 202, Dhanashree Height, Veera Desai Road, Azad Nagar 2, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1311353, "lng": 72.8329194 },
+        "viewport": {
+          "northeast": { "lat": 19.13268813029151, "lng": 72.8342792802915 },
+          "southwest": { "lat": 19.1299901697085, "lng": 72.83158131970848 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Dr R.K SINHA",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 949,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110674452366568398279\">Taranjit singh</a>"
+          ],
+          "photo_reference": "ATplDJY41mqZI6QNpGYVper6aOQaJwnby4AuvkAXMuLl1JuXNo7VZ2Q9GWJOGMNb7ijcjSx7nnRI1X8a90YMyiutW4JsBgU217tdtB2vZcDiUBm3ULHfgRfYMGyfjz6Ihr2DfwBBKxPW7mplDRzbnZm3o7myzYz2Kzhi28ejvKCPdrgt6DNf",
+          "width": 1280
+        }
+      ],
+      "place_id": "ChIJp2_iZyG25zsRp8-Jrt3Qb7E",
+      "rating": 4,
+      "reference": "ChIJp2_iZyG25zsRp8-Jrt3Qb7E",
+      "scope": "GOOGLE",
+      "types": [
+        "hospital",
+        "doctor",
+        "point_of_interest",
+        "health",
+        "establishment"
+      ],
+      "user_ratings_total": 4,
+      "vicinity": "4RJM+F53, The Link Building, Link Ext. Road,Andheri (W), opp. Star Bazar, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1292139, "lng": 72.8317153 },
+        "viewport": {
+          "northeast": { "lat": 19.1305818802915, "lng": 72.83295543029149 },
+          "southwest": { "lat": 19.1278839197085, "lng": 72.83025746970849 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Bellevue Multispeciality Hospital",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102955669115230725568\">Ravi Kapoor</a>"
+          ],
+          "photo_reference": "ATplDJa2mnawl5dGDmG1OcIyLrqdyzKOpZro20DYOjH2zSHqPovzhHDv3JXN9d5W0mVobC1j7LhF_I6tYq1DjXbJ5zwYC30zNzPIV2jqyiBPVypRx07hWH0poHUNxPnrKqiRap4tq0_nb79AkQfPKvLjyzYHa7v6js4exuZ8WYtECfc_e5Ne",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJnWXxEhTJ5zsROFVUDLZr2ds",
+      "plus_code": {
+        "compound_code": "4RHJ+MM Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RHJ+MM"
+      },
+      "rating": 3.3,
+      "reference": "ChIJnWXxEhTJ5zsROFVUDLZr2ds",
+      "scope": "GOOGLE",
+      "types": [
+        "hospital",
+        "doctor",
+        "point_of_interest",
+        "health",
+        "establishment"
+      ],
+      "user_ratings_total": 144,
+      "vicinity": "opp. Star Bazaar Extension, The Link, 1st floor, Opp. D.N. Nagar Metro Station gate no 3, Next to Audi Showroom, opp. Star Bazaar Extension, New Link Road, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1312384, "lng": 72.8421993 },
+        "viewport": {
+          "northeast": { "lat": 19.1326019802915, "lng": 72.8436037302915 },
+          "southwest": { "lat": 19.1299040197085, "lng": 72.8409057697085 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Shinde Medicare Hospital Pvt Ltd | Dr. Veena Shinde",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113000660638858773581\">Shinde Medicare Hospital Pvt Ltd | Dr. Veena Shinde</a>"
+          ],
+          "photo_reference": "ATplDJZNJmrns-BAIxF7kdRwsu58s5l0cnSazEeBJG32R5Synqr6zezewNNlJAPMqSJECHHSALxlmlNQO1j_nPGm2t8wSPbR5jYpG2uC9uNjJRnMJFbTqvhY8jgbZAl1emJlAaR9vjg0GXy0ovxlu9YKUY6TCqmoSDySDzmHBEBEQtWmxGoz",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJS9Ky4yi25zsRVtqhggAIRqg",
+      "plus_code": {
+        "compound_code": "4RJR+FV Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RJR+FV"
+      },
+      "rating": 4.4,
+      "reference": "ChIJS9Ky4yi25zsRVtqhggAIRqg",
+      "scope": "GOOGLE",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 96,
+      "vicinity": "MAHADEV apt, Jai Bhavani Mata Road, Amboli, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1270381, "lng": 72.83188530000001 },
+        "viewport": {
+          "northeast": { "lat": 19.1283853302915, "lng": 72.83327518029152 },
+          "southwest": { "lat": 19.1256873697085, "lng": 72.83057721970852 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/pharmacy-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/pharmacy_pinlet",
+      "name": "SIDDHI SAI MEDICAL & GENERAL STORES",
+      "opening_hours": { "open_now": false },
+      "photos": [
+        {
+          "height": 1152,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117148875204351767474\">SIDDHI SAI MEDICAL &amp; GENERAL STORES</a>"
+          ],
+          "photo_reference": "ATplDJadGa5BtjCMLiRhrQDIej9trqXu78NT2f90xQiZ2QVFo5az8dw8lxPyYueaI3Z6H5iO0jB-MXFKo6awVTqrTN0z8O4XWS63eXlfeGjKQe0Mv6ebPF4yZUmiTDrDvaEBtaRiQasYE35Xdf7T4KDRrPXgU3uLrN_1KiYzq4kKXxF1w73v",
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJJUM3nCC25zsRmkxOut5DWes",
+      "plus_code": {
+        "compound_code": "4RGJ+RQ Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RGJ+RQ"
+      },
+      "rating": 5,
+      "reference": "ChIJJUM3nCC25zsRmkxOut5DWes",
+      "scope": "GOOGLE",
+      "types": [
+        "pharmacy",
+        "hospital",
+        "point_of_interest",
+        "store",
+        "health",
+        "establishment"
+      ],
+      "user_ratings_total": 3,
+      "vicinity": "opp. Apna Bazar, Shop No.2,Atit Shopping Enterp,Near Shitladevi Temple, D.N. J.P. Road,, opp. Apna Bazar, D.N.Nagar, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.12738629999999, "lng": 72.831214 },
+        "viewport": {
+          "northeast": { "lat": 19.1287392302915, "lng": 72.83251433029152 },
+          "southwest": { "lat": 19.12604126970849, "lng": 72.8298163697085 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Siddhi Vinayak Hospital",
+      "opening_hours": { "open_now": true },
+      "place_id": "ChIJ48-ZiCC25zsRg7KEcXxIjic",
+      "plus_code": {
+        "compound_code": "4RGJ+XF Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RGJ+XF"
+      },
+      "rating": 3.5,
+      "reference": "ChIJ48-ZiCC25zsRg7KEcXxIjic",
+      "scope": "GOOGLE",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 6,
+      "vicinity": "A ,Wing, Building Sheetala Davi, Metro Station, New Link Road, D.N.Nagar, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.128842, "lng": 72.82941799999999 },
+        "viewport": {
+          "northeast": { "lat": 19.1300614302915, "lng": 72.8307332802915 },
+          "southwest": { "lat": 19.1273634697085, "lng": 72.82803531970848 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Dr. Pareek's Deafness clinic and ENT Centre",
+      "opening_hours": { "open_now": false },
+      "photos": [
+        {
+          "height": 4008,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118117524888860659567\">Dr. Pareek&#39;s Deafness clinic and ENT Centre</a>"
+          ],
+          "photo_reference": "ATplDJYhxTP3g0LpWFYmZ_wES3sczvBZoSF1rirIRXaHIWF3jEUDs-F3h-7e-kC_LgB2OL-U9Lnrckh1qnsqH2kVavoZnJIXDGkZlLS8qDLZ97_lrHNZnwoSjLxBPFaathn8y8gbcM89u7lirm8wUOmAGazOhXnSw2XJI4ESg84lNn-fp7oE",
+          "width": 5344
+        }
+      ],
+      "place_id": "ChIJm5fdJTzI5zsRVzYRP8L4VSI",
+      "plus_code": {
+        "compound_code": "4RHH+GQ Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RHH+GQ"
+      },
+      "rating": 4.3,
+      "reference": "ChIJm5fdJTzI5zsRVzYRP8L4VSI",
+      "scope": "GOOGLE",
+      "types": [
+        "hospital",
+        "doctor",
+        "point_of_interest",
+        "health",
+        "establishment"
+      ],
+      "user_ratings_total": 216,
+      "vicinity": "601,606, 6th floor, Gurudwara, Cosmos Plaza, near D N Nagar Metro Station, opposite 4 Bungalow, JP Road, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1285195, "lng": 72.82833049999999 },
+        "viewport": {
+          "northeast": { "lat": 19.1299368802915, "lng": 72.82969623029149 },
+          "southwest": { "lat": 19.1272389197085, "lng": 72.82699826970848 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "We Care Trust",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 638,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114915684741826268162\">Deepak Keswani</a>"
+          ],
+          "photo_reference": "ATplDJbUoMypsdfmBs9Aea3gBh5ngqg-MT4o6O93Bis_4lyuh5Y18KSiGj8Oz-0sdseF2W868-H81O7gHnW1oTR8BPhYqzTrdDhsi_hHW6yxl7aB5xqyYi8PCW6d8LVIqpK2XuiN7wOWz0BaPfcLfH_m150GDQVk5QARhSO_WzpMPOq93g-s",
+          "width": 1000
+        }
+      ],
+      "place_id": "ChIJKSBeLyC25zsRYSfcmpDU3hs",
+      "plus_code": {
+        "compound_code": "4RHH+C8 Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RHH+C8"
+      },
+      "rating": 4.8,
+      "reference": "ChIJKSBeLyC25zsRYSfcmpDU3hs",
+      "scope": "GOOGLE",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 5,
+      "vicinity": "4-New Akhand Jyot, JP Road, Manish Nagar, Four Bungalows, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1355779, "lng": 72.82830729999999 },
+        "viewport": {
+          "northeast": { "lat": 19.1370109802915, "lng": 72.82964468029151 },
+          "southwest": { "lat": 19.1343130197085, "lng": 72.82694671970849 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Healthspring - Oshiwara- A unit of Wellspring Healthcare Pvt Ltd",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 900,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106480267251806695577\">Regan Fernandes</a>"
+          ],
+          "photo_reference": "ATplDJY6AF9FKuNeXPs9WSm9Rd5u6jmlvV_U20alxYnTvU74w1v_vQcUnz9BCtPh9mZ168vrbVzr0W6071v9P6Q4kNCDaDW6sddRvoQz2kQNZJTRq0ijiFviOsEFQx2n9LqgAJimB5LhHmon7wHKDbnF0jdaXgYXlU_2N9V476LDWh3vt-br",
+          "width": 1600
+        }
+      ],
+      "place_id": "ChIJtxPKoSO25zsRSebfAt57X-E",
+      "plus_code": {
+        "compound_code": "4RPH+68 Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RPH+68"
+      },
+      "rating": 4.6,
+      "reference": "ChIJtxPKoSO25zsRSebfAt57X-E",
+      "scope": "GOOGLE",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 409,
+      "vicinity": "Shree Krishna,G Wing- 104 First floor, Opposite Laxmi Industrial Estate Near Fun Republic, New Link Road, Oshiwara, Andheri"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1396374, "lng": 72.83200289999999 },
+        "viewport": {
+          "northeast": { "lat": 19.1409822302915, "lng": 72.8333038302915 },
+          "southwest": { "lat": 19.1382842697085, "lng": 72.83060586970849 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Womens Hospital",
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110409801054027567825\">Solomon James</a>"
+          ],
+          "photo_reference": "ATplDJbFHNvRS2Hd2ZtbinTLCV2zObEX4c_1CeOdemwG08s7cdvmLqWSazZiUx_8AK9K3TD064bC-IcjaMtodJecWG1SweY013q9_BIf399tWWU36jPQJpf3VEnrrqSpASnV4_I4zuCq0f_VZ3hTloaaD-sMYbswJfy99TKAxRwo4ydaBc42",
+          "width": 2268
+        }
+      ],
+      "place_id": "ChIJfekD6jy25zsR3sbh9WzAIGI",
+      "plus_code": {
+        "compound_code": "4RQJ+VR Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RQJ+VR"
+      },
+      "rating": 4.5,
+      "reference": "ChIJfekD6jy25zsR3sbh9WzAIGI",
+      "scope": "GOOGLE",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 2,
+      "vicinity": "3, Veer Desai Industrial Estate, 400056, New Link Road, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1272851, "lng": 72.8338522 },
+        "viewport": {
+          "northeast": { "lat": 19.1286889302915, "lng": 72.83521458029149 },
+          "southwest": { "lat": 19.1259909697085, "lng": 72.83251661970849 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "CHAVAN MATERNITY NURSING HOME",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103417338690032171512\">Komal Chavan</a>"
+          ],
+          "photo_reference": "ATplDJbA5HhKN-XGpZNf-EWeh6_NOG48t47FVlQvX8sB9FAN7q23W0EbzlVBXSo6rrzucBTPuvjVKtlgyS9AxXVm97cpBeHEf6nWMLIriFTkYzGTQxL3GTUL5ZcP_ULNE0mHwb8MbaWGdaHQh3MRUoZ-0aUZxYd0qigKXZjSumG5NMcnaJOL",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJIXCIrCC25zsRK6PM-9qSXUw",
+      "plus_code": {
+        "compound_code": "4RGM+WG Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RGM+WG"
+      },
+      "rating": 3.8,
+      "reference": "ChIJIXCIrCC25zsRK6PM-9qSXUw",
+      "scope": "GOOGLE",
+      "types": [
+        "hospital",
+        "doctor",
+        "point_of_interest",
+        "health",
+        "establishment"
+      ],
+      "user_ratings_total": 15,
+      "vicinity": "Plot No. 195, 2B, JP Road, D.N.Nagar, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1399741, "lng": 72.83196439999999 },
+        "viewport": {
+          "northeast": { "lat": 19.1413614302915, "lng": 72.8333083302915 },
+          "southwest": { "lat": 19.1386634697085, "lng": 72.83061036970848 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "QI Spine Clinic",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 1125,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105220488010111733895\">QI Spine Clinic</a>"
+          ],
+          "photo_reference": "ATplDJbf-iMQeeA_tQJpkpisRFNaW-qsF6gKoV05_v_Ki5jSk2e_morqXZM_wm_eIxoTuPiX3sn04Nr1HgOUluWPcFYT1cVyLl_YzprmK_5_p25BhO9C3YgopCC1exk6hs4sT5ViaU6oAwr3QJHuqnYpiYbqF9s5oxEEqSuUzAq4y8Hw6ADe",
+          "width": 2000
+        }
+      ],
+      "place_id": "ChIJ64AA7Dy25zsRoazLlpGHwWs",
+      "plus_code": {
+        "compound_code": "4RQJ+XQ Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RQJ+XQ"
+      },
+      "rating": 4.7,
+      "reference": "ChIJ64AA7Dy25zsRoazLlpGHwWs",
+      "scope": "GOOGLE",
+      "types": [
+        "physiotherapist",
+        "hospital",
+        "doctor",
+        "point_of_interest",
+        "health",
+        "establishment"
+      ],
+      "user_ratings_total": 645,
+      "vicinity": "Unit 207, 2nd Floor, Landmark Building, Link Road, Opp. Infinity Citi Mall, Andheri-West, Mumbai"
+    },
+    {
+      "business_status": "CLOSED_TEMPORARILY",
+      "geometry": {
+        "location": { "lat": 19.1333532, "lng": 72.83755510000002 },
+        "viewport": {
+          "northeast": { "lat": 19.1347039302915, "lng": 72.83886863029151 },
+          "southwest": { "lat": 19.1320059697085, "lng": 72.83617066970851 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Parijat Hospital - Mrs. Manju Vinay Mataliya",
+      "permanently_closed": true,
+      "place_id": "ChIJpTpzYe235zsRecR9H9-Vjlc",
+      "plus_code": {
+        "compound_code": "4RMQ+82 Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RMQ+82"
+      },
+      "reference": "ChIJpTpzYe235zsRecR9H9-Vjlc",
+      "scope": "GOOGLE",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "vicinity": "A - 64/102, Flower Queen, Everson Society, Near Apna Bazaar, Garden View, Shastri Nagar, Veera Desai Road, Andheri(W), Azad Nagar, Mumbai - 400053"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.127841, "lng": 72.8312341 },
+        "viewport": {
+          "northeast": { "lat": 19.12919323029151, "lng": 72.8325705302915 },
+          "southwest": { "lat": 19.1264952697085, "lng": 72.82987256970848 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Dr. Vaidya Eye Hospital",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114766377433950181914\">Dr. Vaidya Eye Hospital</a>"
+          ],
+          "photo_reference": "ATplDJZiis5lNyrT1AdQSamO416CTlA7c5P7-ZFN-BUPCyorEthak1M9l9YKziB8aVpZz8QCFp3YdwDJFBuVIS7bZ3olj2GcBMIyNbWKi0D9dM5ul9Yr4J-ncgK405CFzWkTiiWmiR0LA82iYrVWe1eFiaDVK73priVTfg6w3fiK4UsmNqvv",
+          "width": 3000
+        }
+      ],
+      "place_id": "ChIJDYAVYiC25zsRvWlW3vBKBQ4",
+      "plus_code": {
+        "compound_code": "4RHJ+4F Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RHJ+4F"
+      },
+      "rating": 4.7,
+      "reference": "ChIJDYAVYiC25zsRvWlW3vBKBQ4",
+      "scope": "GOOGLE",
+      "types": [
+        "hospital",
+        "doctor",
+        "point_of_interest",
+        "health",
+        "establishment"
+      ],
+      "user_ratings_total": 133,
+      "vicinity": "Metro Junction, 202, 2nd Floor, Lotus Link Square, above Bank of Baroda, Andheri Link Road, D.N.Nagar, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1323838, "lng": 72.8372711 },
+        "viewport": {
+          "northeast": { "lat": 19.1337332302915, "lng": 72.8387517302915 },
+          "southwest": { "lat": 19.1310352697085, "lng": 72.8360537697085 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Shashwat Dr Santosh Kadam",
+      "place_id": "ChIJofs8gP235zsRtRy5T5aqNjE",
+      "plus_code": {
+        "compound_code": "4RJP+XW Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RJP+XW"
+      },
+      "rating": 3,
+      "reference": "ChIJofs8gP235zsRtRy5T5aqNjE",
+      "scope": "GOOGLE",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 2,
+      "vicinity": "Industrial Area, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1313064, "lng": 72.8380565 },
+        "viewport": {
+          "northeast": { "lat": 19.1326889802915, "lng": 72.83938043029151 },
+          "southwest": { "lat": 19.1299910197085, "lng": 72.83668246970849 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Dr Rathore",
+      "photos": [
+        {
+          "height": 1920,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111279225183302805214\">SANTOS FERNANDES</a>"
+          ],
+          "photo_reference": "ATplDJYhH0p0tk2FAVMGFusNHSHeQIAuY1p4_tEojBcRMpQc3m1sZ2h2AWMXVXi5fB6ZrXzsrsveNfsTvkIfl8_fzORW72yi5C1ACiX7O-6ikwXg2w4c48Jqs6rozYhH6cfZgEWIg1HU-32MNDa-ZA-Nbf5k_hcpIC__daLQ0JPX7mJilY2W",
+          "width": 1080
+        }
+      ],
+      "place_id": "ChIJ-9YAwZC35zsRs3G5oczdu3M",
+      "reference": "ChIJ-9YAwZC35zsRs3G5oczdu3M",
+      "scope": "GOOGLE",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "vicinity": "4RJQ+G6F, Vithal Naik Marg, Prathmesh Complex, Jogeshwari West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1313068, "lng": 72.8380573 },
+        "viewport": {
+          "northeast": { "lat": 19.1326894302915, "lng": 72.83938118029151 },
+          "southwest": { "lat": 19.1299914697085, "lng": 72.8366832197085 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Dr. Pradeep Rathod (M. B. B. S.)",
+      "opening_hours": { "open_now": false },
+      "photos": [
+        {
+          "height": 1920,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111279225183302805214\">SANTOS FERNANDES</a>"
+          ],
+          "photo_reference": "ATplDJZgxFzOE2R6j-5C8TzgXFinySbtDVqCoxUgQtRWq38uU0YwhCXvmjklYayVUEZQgFwDTOSakwDsKj21JNryomnf1vukZCxYXHFoz1basFARtWbSNkF9pJBKpbvRzCfjBkYKDROWbkBUTFmd0-PsWQ0IdI-fdWvQ8612pXFCIeKrRG1r",
+          "width": 1080
+        }
+      ],
+      "place_id": "ChIJC6S7NOG35zsRx-d9xe-38P0",
+      "plus_code": {
+        "compound_code": "4RJQ+G6 Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RJQ+G6"
+      },
+      "rating": 3.3,
+      "reference": "ChIJC6S7NOG35zsRx-d9xe-38P0",
+      "scope": "GOOGLE",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 9,
+      "vicinity": "Shantinath Shopping Centre, 8, Veera Desai Road, Mumbai"
+    }
+  ],
+  "status": "OK"
+}

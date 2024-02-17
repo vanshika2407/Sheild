@@ -1,0 +1,665 @@
+{
+  "html_attributions": [],
+  "next_page_token": "ATplDJYREA8yawpcOp2crsB19c6Ic8TnRdaf2LaHoVxYVlpZQcB5xiD_JQ4Sl-SgUBwjxjq1bsiua_hzDDMqmUiOE77N7HvM_nfFcTdfR95xgFCHa5P31H2AoQg9VPlLzYxudhoXz8cXiO1sRguCdy7Z7km3gFASdQ3AY9MKE29MFMMXbbspsWf4gFlNP0z-nslJGWLKG10NZyRisBFDCTXWs4f3PlGO-Pbw5t5yD6FyhHmnqKaRM13eoLADZxFMfzUCA5tF3rvKrXzY1RXdFSJXfKwTAUtA0T1ugNpdvJXeKP0nMZ6a0ryJP7qK25ytQ8nLqxbhvf26ZlXylMeiCRPq975m2PRWWfCgwV9vlF7qM5hBSKOm3oqx_wDVAzQSacKLBmqo49pNrKuBrfiWOOIGzC8pNf5-WMqzpJ7FPnKl2Heuj1tNPjOICw",
+  "results": [
+    {
+      "geometry": {
+        "location": { "lat": 19.0759837, "lng": 72.8776559 },
+        "viewport": {
+          "northeast": { "lat": 19.27163385833489, "lng": 72.98649944916775 },
+          "southwest": { "lat": 18.89286755846978, "lng": 72.77587292177071 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Mumbai",
+      "photos": [
+        {
+          "height": 405,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104540595485199272982\">ABHINAV Gupta</a>"
+          ],
+          "photo_reference": "ATplDJYe38xQIMs8HBZBl9a8JDcQFvzQ-cW0UPZmDdfJjEolLv7wCCfC9zaqxziEqgXe5rshXEZVhhp5BpAYGYALuOeX7D3ybtlzYYzBYKqC3qyhkgO8939ooLVja1GfBIBAB-Xh9IYBWBm14XU6FWcc8e2rLnXUDaYL2vJTnXQ0_iJvENIH",
+          "width": 540
+        }
+      ],
+      "place_id": "ChIJwe1EZjDG5zsRaYxkjY_tpF0",
+      "reference": "ChIJwe1EZjDG5zsRaYxkjY_tpF0",
+      "scope": "GOOGLE",
+      "types": ["locality", "political"],
+      "vicinity": "Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1394276, "lng": 72.8341573 },
+        "viewport": {
+          "northeast": { "lat": 19.1407711802915, "lng": 72.8354020302915 },
+          "southwest": { "lat": 19.1380732197085, "lng": 72.8327040697085 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Hotel Orritel West",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 428,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115108764216234920561\">Hotel Orritel West</a>"
+          ],
+          "photo_reference": "ATplDJZE3c_fzKM5pJKLB_SPFpquYlywdIv-5lYp1sHSjPxpxN71vnO6l_IcKIfBU_g82CZofGUE7m3j9-aQLkfXabtNaZZho1tqQPjZLyF04KsS8TvVnXyKmSske08zcGDQ-IwErNWj_3gf_dMAXPsEjlo9HXN5CpclcKiX6HgGWotuEd4j",
+          "width": 761
+        }
+      ],
+      "place_id": "ChIJyQReoDPI5zsRnAFzVIFR67A",
+      "plus_code": {
+        "compound_code": "4RQM+QM Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RQM+QM"
+      },
+      "rating": 3.9,
+      "reference": "ChIJyQReoDPI5zsRnAFzVIFR67A",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "restaurant",
+        "food",
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 707,
+      "vicinity": "34-B, T Series Lane, Opp. Fame Adlabs Cinema, Off New Link Road, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1272773, "lng": 72.8375889 },
+        "viewport": {
+          "northeast": { "lat": 19.1286482802915, "lng": 72.83885718029151 },
+          "southwest": { "lat": 19.12595031970849, "lng": 72.83615921970849 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "ABC Chemicals",
+      "opening_hours": { "open_now": true },
+      "place_id": "ChIJC2XHria25zsRZcSGS02HTRM",
+      "plus_code": {
+        "compound_code": "4RGQ+W2 Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RGQ+W2"
+      },
+      "rating": 2.5,
+      "reference": "ChIJC2XHria25zsRZcSGS02HTRM",
+      "scope": "GOOGLE",
+      "types": ["point_of_interest", "establishment"],
+      "user_ratings_total": 2,
+      "vicinity": "Kshitij, 105 / 106, Veera Desai Road, Mhada Colony, Azad Nagar, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1366877, "lng": 72.8315327 },
+        "viewport": {
+          "northeast": { "lat": 19.13798403029151, "lng": 72.83289698029151 },
+          "southwest": { "lat": 19.1352860697085, "lng": 72.8301990197085 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "SAB TV Office",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 517,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117813223364537388957\">Anurag Parashar</a>"
+          ],
+          "photo_reference": "ATplDJZMqemI2guDDkf_mQAFQ147GIN6_Nt0BYcbSn-ywP8XBByWr42DLQRJ8aJe6RBx-XRf5-Y0DwvGVLDeQ3XcqZohjQdBMa_A-oKG3pSSfBd2sWOK8mr3HD7tBY_I6EF2UVmWbu7RS_2_icOfeZo5UZ2c8lBqyoil_dRABqf-W4_iNf1t",
+          "width": 920
+        }
+      ],
+      "place_id": "ChIJSzHHFiO25zsRvpNivHw6kqo",
+      "rating": 4.1,
+      "reference": "ChIJSzHHFiO25zsRvpNivHw6kqo",
+      "scope": "GOOGLE",
+      "types": ["point_of_interest", "establishment"],
+      "user_ratings_total": 226,
+      "vicinity": "4RPJ+MJF, SAB TV Road, Suresh Nagar, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1350104, "lng": 72.8374671 },
+        "viewport": {
+          "northeast": { "lat": 19.1363396802915, "lng": 72.8387891302915 },
+          "southwest": { "lat": 19.1336417197085, "lng": 72.8360911697085 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "White House",
+      "place_id": "ChIJq6paqzrG5zsRuUUQz15IBMY",
+      "plus_code": {
+        "compound_code": "4RPP+2X Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RPP+2X"
+      },
+      "rating": 4.2,
+      "reference": "ChIJq6paqzrG5zsRuUUQz15IBMY",
+      "scope": "GOOGLE",
+      "types": ["real_estate_agency", "point_of_interest", "establishment"],
+      "user_ratings_total": 6,
+      "vicinity": "Door No. C - 22, New Chandra, Veera Desai Road, Andheri West, Azad Nagar, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.130181, "lng": 72.83144899999999 },
+        "viewport": {
+          "northeast": { "lat": 19.1315308802915, "lng": 72.83284198029149 },
+          "southwest": { "lat": 19.1288329197085, "lng": 72.83014401970848 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Pelican",
+      "opening_hours": { "open_now": true },
+      "place_id": "ChIJdUhxBSG25zsR2WZRC_th5a0",
+      "plus_code": {
+        "compound_code": "4RJJ+3H Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RJJ+3H"
+      },
+      "rating": 1.7,
+      "reference": "ChIJdUhxBSG25zsR2WZRC_th5a0",
+      "scope": "GOOGLE",
+      "types": ["travel_agency", "point_of_interest", "establishment"],
+      "user_ratings_total": 3,
+      "vicinity": "504, Laxmi Mall, Bldg. No. 5, Laxmi Industrial Estate,, New Link Road, Andheri (W), Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.136515, "lng": 72.8291844 },
+        "viewport": {
+          "northeast": { "lat": 19.1379487802915, "lng": 72.8305244302915 },
+          "southwest": { "lat": 19.1352508197085, "lng": 72.8278264697085 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "R.R. Associates Estate Consultants",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 810,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110543456988194046002\">R.R. Associates Estate Consultants</a>"
+          ],
+          "photo_reference": "ATplDJZS4z7um98lomOK-MnF0zjNw5YA_qj7Mhyb73uYRWi8SZA-aFmYo7B2EcQz17asu5c_KbLmADsJJ7gaVIOvJFmAixcdnvy4Q0q9zhHMXaMCUOdtzZ-UqYJayKVcw3Tk4ZxQeOxtJrrCB94XZ8Wehkc3Fv1Cx-d9D1q7citugS_FXnnS",
+          "width": 1440
+        }
+      ],
+      "place_id": "ChIJ717aXha25zsRXmG3tw5K1_o",
+      "plus_code": {
+        "compound_code": "4RPH+JM Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RPH+JM"
+      },
+      "rating": 4.7,
+      "reference": "ChIJ717aXha25zsRXmG3tw5K1_o",
+      "scope": "GOOGLE",
+      "types": [
+        "real_estate_agency",
+        "general_contractor",
+        "finance",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 15,
+      "vicinity": "Shop No. 18, Nimbus Centre, Raviraj Complex, Lokhandwala, Near Empressa Hotel, behind Sab T V - Kalinga Lane, off New Link Road, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1396029, "lng": 72.8320138 },
+        "viewport": {
+          "northeast": { "lat": 19.1409474302915, "lng": 72.83331093029152 },
+          "southwest": { "lat": 19.1382494697085, "lng": 72.83061296970851 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bank-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bank-intl_pinlet",
+      "name": "IDBI Bank",
+      "opening_hours": { "open_now": false },
+      "photos": [
+        {
+          "height": 1200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103658358446289242247\">IDBI Bank</a>"
+          ],
+          "photo_reference": "ATplDJbxxKh12mlmBDZwRKC69SbfnWXJrsaeGVtYgVHZNklG5OIqYDUnwAm-dEao8QW1t9y_W3YGbw84QbnPvJO6koI7JR0WuegXtu1FPznBWDIm4C_YdYFW4N2ap9tTyfj4wAECIBuJf4hcJSZ9Y0S7bD0PBTfUv_kNBYW9hGvO6jEOi_hI",
+          "width": 1600
+        }
+      ],
+      "place_id": "ChIJowGzFCPI5zsR4Mc9JHTofCQ",
+      "plus_code": {
+        "compound_code": "4RQJ+RR Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RQJ+RR"
+      },
+      "rating": 3.3,
+      "reference": "ChIJowGzFCPI5zsR4Mc9JHTofCQ",
+      "scope": "GOOGLE",
+      "types": ["atm", "bank", "finance", "point_of_interest", "establishment"],
+      "user_ratings_total": 30,
+      "vicinity": "Gopi Chambers, 1St Flr, Andheri Link Road, Andheri(W), Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1345339, "lng": 72.8341094 },
+        "viewport": {
+          "northeast": { "lat": 19.1358154302915, "lng": 72.83545073029151 },
+          "southwest": { "lat": 19.1331174697085, "lng": 72.83275276970849 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Yash Raj Films Private Limited",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106277812989160948714\">Julius Mondal</a>"
+          ],
+          "photo_reference": "ATplDJZOD5pDgbWjmTTy-tjEmTr1H8s8Q-cWIJUbBccyTHjhkbDW0XPNOSF-ujDYFe3MRIqWD9mH3651IWApjsC-BPSqqPZFogu2MRIyZEnI9tEAczO9P62nfzDip9kwNSGzUGQDSdnrkz4mRB8gfIh87aex8amLoLMnFfzvHtvntNia-e67",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJ226piCO25zsRPrUguv0faLc",
+      "plus_code": {
+        "compound_code": "4RMM+RJ Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RMM+RJ"
+      },
+      "rating": 4.4,
+      "reference": "ChIJ226piCO25zsRPrUguv0faLc",
+      "scope": "GOOGLE",
+      "types": ["point_of_interest", "store", "establishment"],
+      "user_ratings_total": 1642,
+      "vicinity": "5, Shah Industrial Estate, Veera Desai Road, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.135149, "lng": 72.8289217 },
+        "viewport": {
+          "northeast": { "lat": 19.1364222302915, "lng": 72.8302798802915 },
+          "southwest": { "lat": 19.1337242697085, "lng": 72.82758191970849 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Dot Dot Dot",
+      "place_id": "ChIJg7e9iSK25zsRCocArLFErKo",
+      "plus_code": {
+        "compound_code": "4RPH+3H Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RPH+3H"
+      },
+      "rating": 3,
+      "reference": "ChIJg7e9iSK25zsRCocArLFErKo",
+      "scope": "GOOGLE",
+      "types": ["point_of_interest", "establishment"],
+      "user_ratings_total": 2,
+      "vicinity": "India"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1360876, "lng": 72.8341849 },
+        "viewport": {
+          "northeast": { "lat": 19.1376032302915, "lng": 72.8355964302915 },
+          "southwest": { "lat": 19.1349052697085, "lng": 72.8328984697085 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Exim India",
+      "place_id": "ChIJSVTnWSS25zsRL_J5bQKnNZI",
+      "plus_code": {
+        "compound_code": "4RPM+CM Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RPM+CM"
+      },
+      "rating": 4.2,
+      "reference": "ChIJSVTnWSS25zsRL_J5bQKnNZI",
+      "scope": "GOOGLE",
+      "types": ["point_of_interest", "establishment"],
+      "user_ratings_total": 6,
+      "vicinity": "Kailashpati Bldg, Plot No .10, Block 'A', 1st Floor, Veera Desai Road Extension, Behind Balaji Telefilms Ltd, Andheri(West), Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1389277, "lng": 72.8325771 },
+        "viewport": {
+          "northeast": { "lat": 19.1404008802915, "lng": 72.8339130802915 },
+          "southwest": { "lat": 19.1377029197085, "lng": 72.83121511970849 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/school_pinlet",
+      "name": "ILW Education Consultants",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 361,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118076546088441598067\">ILW Education Consultants</a>"
+          ],
+          "photo_reference": "ATplDJbq6wxhNZgm_AjUcvolevlqw0LeXr0Jn8KkUQOzFSBUd3tvdEdHM3Y7kuGkXPCubze2QAFz0HOVTWlRkrkPA-SET734soPVp_ZrJiPFH1OOo8AH2iq59InRCw1gkxTD9-Yj1Uk8ofuTJJBFHf6tdVl4zKOuUManvx_QwTuVUbhIY9Y",
+          "width": 754
+        }
+      ],
+      "place_id": "ChIJXZw6jrjJ5zsRY1C6Cfminoc",
+      "plus_code": {
+        "compound_code": "4RQM+H2 Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RQM+H2"
+      },
+      "rating": 4.6,
+      "reference": "ChIJXZw6jrjJ5zsRY1C6Cfminoc",
+      "scope": "GOOGLE",
+      "types": ["point_of_interest", "establishment"],
+      "user_ratings_total": 142,
+      "vicinity": "opp. Citi Mall, Idea Square, B-42, Off New Link Rd, opp. Citi Mall, above Kalyan Jewellers, Lane, Veera Desai Industrial Estate, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1281103, "lng": 72.8405836 },
+        "viewport": {
+          "northeast": { "lat": 19.1294470302915, "lng": 72.8419702802915 },
+          "southwest": { "lat": 19.1267490697085, "lng": 72.8392723197085 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "The Gateway by Ozone Group & V Raheja",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 1024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114549457765439792989\">Mayur Vartak</a>"
+          ],
+          "photo_reference": "ATplDJYhFRp_4zf7d7GGlKsokUcmLlo2jdhjuWHtiryokpoTNdDoxOnlubwzZG87SOs9OZJzUKoSXmDwKtwY2nKklAx_ZsDHJ1PpGwMD88sqm0I6-_sXeoF1cURBsd-dh6G2i2R7HqU5v0XHys1HvXB0YjTeQCwNL9ILSTH3eFUqMb4ngx1B",
+          "width": 768
+        }
+      ],
+      "place_id": "ChIJ29SZYwnJ5zsRgBoKbhfhYvg",
+      "rating": 4.1,
+      "reference": "ChIJ29SZYwnJ5zsRgBoKbhfhYvg",
+      "scope": "GOOGLE",
+      "types": ["point_of_interest", "establishment"],
+      "user_ratings_total": 41,
+      "vicinity": "4RHR+66W, Ceasar Road, Amboli, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1355803, "lng": 72.83102269999999 },
+        "viewport": {
+          "northeast": { "lat": 19.1369229302915, "lng": 72.8323723302915 },
+          "southwest": { "lat": 19.1342249697085, "lng": 72.8296743697085 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "ASIAN ADORES",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 578,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106492171195700244967\">Raman T . S.</a>"
+          ],
+          "photo_reference": "ATplDJa4zjE8EHefBa2oYoF7pQpOyXP0_pLp3Fh3HAENTklN3Bj0CiVNgX5L7Xhuf9RmpPLywDVzUrCMCgEmbQaiW_N3AUmedES8iTIKfYDgo1n5BhW_469nPcBqOYiyWPnnVapf489DwRt2sv9D-RS91Qq9jXdFXmuTEaQ3pFIoYbrSHAud",
+          "width": 600
+        }
+      ],
+      "place_id": "ChIJ4ZAgx43I5zsRNGt9-hFN3LI",
+      "plus_code": {
+        "compound_code": "4RPJ+6C Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RPJ+6C"
+      },
+      "rating": 4,
+      "reference": "ChIJ4ZAgx43I5zsRNGt9-hFN3LI",
+      "scope": "GOOGLE",
+      "types": ["point_of_interest", "establishment"],
+      "user_ratings_total": 8,
+      "vicinity": "414 Laxmi Mall, Bldg no 5, Laxmi Industrial Estate, New Link Road, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1393862, "lng": 72.8333902 },
+        "viewport": {
+          "northeast": { "lat": 19.1407149302915, "lng": 72.83465628029151 },
+          "southwest": { "lat": 19.1380169697085, "lng": 72.83195831970849 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+      "name": "The Little Door",
+      "opening_hours": { "open_now": false },
+      "photos": [
+        {
+          "height": 672,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108972755819222439864\">The Little Door</a>"
+          ],
+          "photo_reference": "ATplDJYGBwXDrPv8AzUiE-H1J6-DKeniAZa1mElFcruWe7T0rbcTUpJBU7UY0-_hrtn_zK-nNfvB3_ktDE7fx5ntdQk0cAWAO2WRKA9PF-005vzjkac0sRJEst4Fj5g2zi-bo4zVq1jkLuTd_AUg3Gjy0rht5bXiRHalapdgnaE1lafldTul",
+          "width": 1200
+        }
+      ],
+      "place_id": "ChIJN2Xcozy25zsRbKZz4ZOol0M",
+      "plus_code": {
+        "compound_code": "4RQM+Q9 Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RQM+Q9"
+      },
+      "price_level": 2,
+      "rating": 4.2,
+      "reference": "ChIJN2Xcozy25zsRbKZz4ZOol0M",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 4781,
+      "vicinity": "Ground Floor, Shri Siddhivinayak Plaza, Mumbai"
+    },
+    {
+      "business_status": "CLOSED_TEMPORARILY",
+      "geometry": {
+        "location": { "lat": 19.1333865, "lng": 72.8344123 },
+        "viewport": {
+          "northeast": { "lat": 19.1347622802915, "lng": 72.8354355302915 },
+          "southwest": { "lat": 19.1320643197085, "lng": 72.8327375697085 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Chhaya And Chhaya Design Consultants",
+      "permanently_closed": true,
+      "place_id": "ChIJLztxvjDI5zsRLHPuWjhiFg4",
+      "plus_code": {
+        "compound_code": "4RMM+9Q Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RMM+9Q"
+      },
+      "rating": 4.5,
+      "reference": "ChIJLztxvjDI5zsRLHPuWjhiFg4",
+      "scope": "GOOGLE",
+      "types": ["point_of_interest", "establishment"],
+      "user_ratings_total": 6,
+      "vicinity": "138, Veera Desai Industrial Estate Road, Veera Desai Industrial Estate, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1267975, "lng": 72.8362698 },
+        "viewport": {
+          "northeast": { "lat": 19.1282924802915, "lng": 72.8376473302915 },
+          "southwest": { "lat": 19.1255945197085, "lng": 72.8349493697085 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/school_pinlet",
+      "name": "Academia De Español | Spanish Language School",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 2060,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102441239423459577614\">Academia De Español | Spanish Language School</a>"
+          ],
+          "photo_reference": "ATplDJYVqtyc-7QrBuzROxz7S9ysnbui8QOnlGlqx1tZQMFbL8K8kuj56T3vWfL46BcAHQR4FGLAZdztzuUZcUnZsnW7G5aJ8u9EhaBNGtMkAJuxAdsMb6lWLNNYNw-1bwd4VB-0Xzk5EXDUwTmKsaBPIOJS8E5EzwMWbg9o5zIbVJmwP8gv",
+          "width": 3661
+        }
+      ],
+      "place_id": "ChIJNyEjANbJ5zsRl0ShNGVYXVc",
+      "plus_code": {
+        "compound_code": "4RGP+PG Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RGP+PG"
+      },
+      "rating": 4.9,
+      "reference": "ChIJNyEjANbJ5zsRl0ShNGVYXVc",
+      "scope": "GOOGLE",
+      "types": ["point_of_interest", "establishment"],
+      "user_ratings_total": 467,
+      "vicinity": "A-Wing, First Floor, Adbullah Manzil, next to Sports Complex, JP Road, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1321587, "lng": 72.8341399 },
+        "viewport": {
+          "northeast": { "lat": 19.1334161802915, "lng": 72.8354796802915 },
+          "southwest": { "lat": 19.1307182197085, "lng": 72.83278171970849 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/school_pinlet",
+      "name": "IITC Andheri",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 3456,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104435897943409800308\">EchoBooom Solutions</a>"
+          ],
+          "photo_reference": "ATplDJbSglBm0hcDLquCxBly7OiVmqyUGFjwMi3bhgh-NMbZ-npaqX__zRME-SD839ZW8R3kjUBmv5p2txzYsbP0s4NUYvsxYJj0HwlpCWi8Wd4AM1IxqCCkJwf20ve2rg6YBTg4esDlz5QSCVWkj6QQRIJ_h_E-jUC0qDihSgYhhr19vvmJ",
+          "width": 5184
+        }
+      ],
+      "place_id": "ChIJC2XHria25zsRfRC2JrP7-mk",
+      "plus_code": {
+        "compound_code": "4RJM+VM Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RJM+VM"
+      },
+      "rating": 4.8,
+      "reference": "ChIJC2XHria25zsRfRC2JrP7-mk",
+      "scope": "GOOGLE",
+      "types": ["general_contractor", "point_of_interest", "establishment"],
+      "user_ratings_total": 294,
+      "vicinity": "8, Janki Center, near S.B.Patiyala, Jeevan Road, Off Veera Desai Road, Andheri West, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1354232, "lng": 72.8339034 },
+        "viewport": {
+          "northeast": { "lat": 19.1367801302915, "lng": 72.83525033029152 },
+          "southwest": { "lat": 19.1340821697085, "lng": 72.83255236970851 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+      "icon_background_color": "#4B96F3",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+      "name": "New Natraj Industries",
+      "opening_hours": { "open_now": true },
+      "photos": [
+        {
+          "height": 407,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100508803150474250218\">Rajiv Singh</a>"
+          ],
+          "photo_reference": "ATplDJaBzfGLBV-0orVs-p3XUyjXPe_6C2FKDF3JxBtvmal66wwu3dQiYaYjOLgjolTrnnw1auf9vIoWkPMAQQ9eOszzdl-SjBaL4xL0xNXLUI5pRVyRrQ399Dr6hNFyG-i7NBdZYMFqLvVewzsDOSEpQ_8CDHiuD44TX7dQ7CqVncntLaeT",
+          "width": 720
+        }
+      ],
+      "place_id": "ChIJC2XHria25zsRxsB4Xbs0tu4",
+      "plus_code": {
+        "compound_code": "4RPM+5H Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RPM+5H"
+      },
+      "rating": 4.7,
+      "reference": "ChIJC2XHria25zsRxsB4Xbs0tu4",
+      "scope": "GOOGLE",
+      "types": [
+        "clothing_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 15,
+      "vicinity": "47-a, 2nd Floor, Ghanshyam Industrial Estate, Veera Desai Road, Andheri West, Mumbai"
+    },
+    {
+      "geometry": {
+        "location": { "lat": 19.1364016, "lng": 72.8296252 },
+        "viewport": {
+          "northeast": { "lat": 19.16592196187907, "lng": 72.84773795161874 },
+          "southwest": { "lat": 19.11140803606715, "lng": 72.80307591128356 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Andheri West",
+      "photos": [
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117129451540767973836\">DC Choudhary</a>"
+          ],
+          "photo_reference": "ATplDJYefOplCqyfj3XAOlP5JewolNVI88I5ERvjFVLeiLtmcsa4HTF63bFT9BVRf7A7dxcbxxVnMxSqqbaNr5kdtuFNTQNbYjDtK0q9GL4DePX9C3RT2ZrwiHnJrJwT7F_4QmwpuNicRi5lAYKNQSFMApmnbd1GxzJqjv5AMGUICe6c3ASv",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJ3ZHYthi25zsRMtExx1eo-JE",
+      "reference": "ChIJ3ZHYthi25zsRMtExx1eo-JE",
+      "scope": "GOOGLE",
+      "types": ["sublocality_level_1", "sublocality", "political"],
+      "vicinity": "Andheri West"
+    }
+  ],
+  "status": "OK"
+}

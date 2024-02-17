@@ -1,0 +1,126 @@
+{
+  "html_attributions": [],
+  "results": [
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.1268998, "lng": 72.83769819999999 },
+        "viewport": {
+          "northeast": { "lat": 19.1282375302915, "lng": 72.8390495802915 },
+          "southwest": { "lat": 19.1255395697085, "lng": 72.8363516197085 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Azad Nagar",
+      "photos": [
+        {
+          "height": 3120,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105714170224490321036\">Sariya K</a>"
+          ],
+          "photo_reference": "ATplDJYCa393EpKRUzT3DloU93zRS47IWyT_CgO0sMsYSgWlpnu1wAiOYtliU0b8uq6pAMxOjhyKPnoFL9ovOGRJMlJRQqtG2XzN1LySbAnwrxAh0aaO6l_2n42ngmlWr2IJ48JOFR9YN-Xya7ijne3-vK_iWSL1TydzxtTdrdre7HP0QSWJ",
+          "width": 4160
+        }
+      ],
+      "place_id": "ChIJEdKic9jJ5zsRiwdAySDARP4",
+      "plus_code": {
+        "compound_code": "4RGQ+Q3 Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RGQ+Q3"
+      },
+      "rating": 4.4,
+      "reference": "ChIJEdKic9jJ5zsRiwdAySDARP4",
+      "scope": "GOOGLE",
+      "types": [
+        "subway_station",
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 475,
+      "vicinity": "J P Road, Andheri (W), Near Andheri Sports Complex, Mumbai"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.129144, "lng": 72.83142769999999 },
+        "viewport": {
+          "northeast": { "lat": 19.1305587802915, "lng": 72.83281273029151 },
+          "southwest": { "lat": 19.1278608197085, "lng": 72.8301147697085 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Andheri West",
+      "photos": [
+        {
+          "height": 3468,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113499515523833938659\">HITANSHU VARU</a>"
+          ],
+          "photo_reference": "ATplDJYAZ2E24vvIZyPmTUHTfsC8xmRGoXE6yjjgyix3T6jF3cQmwKkmcYE471fD71tDFYUI2zq5UAnCqc3U_rhBRItz7F3oBiAkgyP5XjBzbylE3oIfSblcPVp4bQiX-yLLBB9hylBu-dhuf5lw7_Bq4CUXve3th7UIL0hVw0v-oxGrhn2x",
+          "width": 4624
+        }
+      ],
+      "place_id": "ChIJ2fuu-yC25zsR_6wqr-mRLYo",
+      "plus_code": {
+        "compound_code": "4RHJ+MH Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RHJ+MH"
+      },
+      "rating": 4.8,
+      "reference": "ChIJ2fuu-yC25zsR_6wqr-mRLYo",
+      "scope": "GOOGLE",
+      "types": [
+        "subway_station",
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 20,
+      "vicinity": "India"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": { "lat": 19.12831599999999, "lng": 72.83030360000001 },
+        "viewport": {
+          "northeast": { "lat": 19.1296776802915, "lng": 72.8316559302915 },
+          "southwest": { "lat": 19.1269797197085, "lng": 72.82895796970848 }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "VIVO DN Nagar Metro Station",
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115912755957156802359\">kailash Sonkamble</a>"
+          ],
+          "photo_reference": "ATplDJa9cZqSIYHRVc-P4WyzbxdkuB6t-QWpS9XFzkY826f1XkWxBl_EJR7yPc4l1lYpZFP2JjxjHAOoq-Ef-gxVtgTAdh1PoIqUr7CGVDfOMW3FG_o0n6C1zTLUfpGCypUwQIoLr9vyDeWNf_lmFNXSk3Mzcx_-Wsrsl8w18hh7U9czKbpP",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJVVVVVXzI5zsRa7Sl91zarw0",
+      "plus_code": {
+        "compound_code": "4RHJ+84 Mumbai, Maharashtra, India",
+        "global_code": "7JFJ4RHJ+84"
+      },
+      "rating": 4.4,
+      "reference": "ChIJVVVVVXzI5zsRa7Sl91zarw0",
+      "scope": "GOOGLE",
+      "types": [
+        "subway_station",
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 476,
+      "vicinity": "Sahayog Nagar, Bhudargarh Colony, Andheri West, Mumbai"
+    }
+  ],
+  "status": "OK"
+}
