@@ -10,26 +10,52 @@ router.get("/police", SafeController.policeNearby);
 router.get("/metro", SafeController.MetroNearby);
 router.get("/hospitals", SafeController.HospitalsNearby);
 router.get("/hotels", SafeController.HotelsNearby);
+
 router.get("/initiate-call-and-msg", async (req, res, next) => {
   try {
     // Call voiceTwilio function
-    await SOS.voiceTwilio(req, res, next);
+    const voiceResult = await SOS.voiceTwilio(req);
 
-    // Call WhatsappMessage function
-    await SOS.sendWhatsapp(req, res, next);
+    // Call sendWhatsapp function
+    const whatsappResult = await SOS.sendWhatsapp(req);
 
-    // Call WhatsappMessage function
-    await SOS.sendMessage(req, res, next);
+    // Call sendMessage function
+    const sendMessageResult = await SOS.sendMessage(req);
 
     // Send a response indicating both actions were triggered
-    res
-      .status(200)
-      .json({ message: "Voice call and message initiated successfully" });
+    res.status(200).json({
+      voiceResult,
+      whatsappResult,
+      sendMessageResult,
+      message: "Voice call and message initiated successfully",
+    });
   } catch (error) {
     // Handle errors
     console.error(error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
+
+// router.get("/initiate-call-and-msg", async (req, res, next) => {
+//   try {
+//     // Call voiceTwilio function
+//     await SOS.voiceTwilio(req, res, next);
+
+//     // Call WhatsappMessage function
+//     await SOS.sendWhatsapp(req, res, next);
+
+//     // Call WhatsappMessage function
+//     await SOS.sendMessage(req, res, next);
+
+//     // Send a response indicating both actions were triggered
+//     res
+//       .status(200)
+//       .json({ message: "Voice call and message initiated successfully" });
+//   } catch (error) {
+//     // Handle errors
+//     console.error(error);
+//     res.status(500).json({ error: "Internal Server Error" });
+//   }
+// });
 
 module.exports = router;
