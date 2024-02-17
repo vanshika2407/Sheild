@@ -104,7 +104,7 @@ const MetroNearby = async (req, res, next) => {
         types: ["subway_station"],
         location: `${currentLocation.lat},${currentLocation.lng}`,
         radius: 1000,
-        key: "AIzaSyAgdWqFlB-negWJL6wAp1YsPg5ZoiamECI",
+        key: "AIzaSyDtnPmw3rJGTqdCbNl_GAHvNK6XHEO-0aU",
       },
 
       timeout: 1000,
@@ -292,9 +292,9 @@ function calculateDistance(point1, point2) {
   const a =
     Math.sin(dLat / 2) * Math.sin(dLat / 2) +
     Math.cos(degToRad(point1.lat)) *
-    Math.cos(degToRad(point2.lat)) *
-    Math.sin(dLng / 2) *
-    Math.sin(dLng / 2);
+      Math.cos(degToRad(point2.lat)) *
+      Math.sin(dLng / 2) *
+      Math.sin(dLng / 2);
 
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   const distance = R * c; // Distance in kilometers
